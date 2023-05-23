@@ -1,6 +1,6 @@
-const Person = require('./Person');
+const EssentialEntity = require('./EssentialEntity');
 
-module.exports = class Student extends Person {
+module.exports = class Student extends EssentialEntity {
     curriculumHash;
     groupId;
 

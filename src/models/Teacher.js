@@ -1,3 +1,3 @@
-const Person = require('./Person');
+const EssentialEntity = require('./EssentialEntity');
 
-module.exports = class Teacher extends Person {}
+module.exports = class Teacher extends EssentialEntity {}
