@@ -1,7 +1,5 @@
-const Entity = require('./Entity');
+const EssentialEntity = require('./EssentialEntity');
 
-module.exports = class Classroom extends Entity {
-    constructor(config) {
-        super(config.id, config);
-    }
+module.exports = class Classroom extends EssentialEntity {
+
 }
