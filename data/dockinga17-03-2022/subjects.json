@@ -9,7 +9,7 @@
     ]
   },
   {
-    "id": "BIOLOGY",
+    "id": "BIO",
     "teachers": [
       38,
       39,
@@ -18,13 +18,13 @@
     ]
   },
   {
-    "id": "BUSINESS_ECON",
+    "id": "BUE",
     "teachers": [
       61
     ]
   },
   {
-    "id": "DUTCH",
+    "id": "DUL",
     "teachers": [
       7,
       8,
@@ -35,7 +35,7 @@
     ]
   },
   {
-    "id": "ECON",
+    "id": "ECO",
     "teachers": [
       30,
       31,
@@ -44,13 +44,13 @@
     ]
   },
   {
-    "id": "ENGINEERING",
+    "id": "ENG",
     "teachers": [
       59
     ]
   },
   {
-    "id": "ENGLISH",
+    "id": "ENL",
     "teachers": [
       0,
       1,
@@ -62,7 +62,7 @@
     ]
   },
   {
-    "id": "FRENCH",
+    "id": "FRL",
     "teachers": [
       20,
       21,
@@ -71,7 +71,7 @@
     ]
   },
   {
-    "id": "GEOGRAPHY",
+    "id": "GEO",
     "teachers": [
       24,
       25,
@@ -79,20 +79,20 @@
     ]
   },
   {
-    "id": "GERMAN",
+    "id": "GEL",
     "teachers": [
       48,
       49
     ]
   },
   {
-    "id": "GREEK",
+    "id": "GRK",
     "teachers": [
       29
     ]
   },
   {
-    "id": "HISTORY",
+    "id": "HIS",
     "teachers": [
       42,
       43,
@@ -100,28 +100,28 @@
     ]
   },
   {
-    "id": "LATIN",
+    "id": "LAT",
     "teachers": [
       27,
       28
     ]
   },
   {
-    "id": "MATH",
+    "id": "MAT",
     "teachers": [
       13,
       14
     ]
   },
   {
-    "id": "MATH_A",
+    "id": "MAA",
     "teachers": [
       15,
       16
     ]
   },
   {
-    "id": "MATH_B",
+    "id": "MAB",
     "teachers": [
       45,
       46,
@@ -129,20 +129,20 @@
     ]
   },
   {
-    "id": "MATH_D",
+    "id": "MAD",
     "teachers": [
       52
     ]
   },
   {
-    "id": "MUSIC",
+    "id": "MUS",
     "teachers": [
       50,
       51
     ]
   },
   {
-    "id": "PE",
+    "id": "PED",
     "teachers": [
       53,
       54,
@@ -151,7 +151,7 @@
     ]
   },
   {
-    "id": "PHYSICS",
+    "id": "PHY",
     "teachers": [
       17,
       18,
@@ -159,14 +159,14 @@
     ]
   },
   {
-    "id": "SCIENCE",
+    "id": "SCI",
     "teachers": [
       57,
       58
     ]
   },
   {
-    "id": "SOCIOLOGY",
+    "id": "SOC",
     "teachers": [
       60
     ]
