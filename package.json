@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "node ./src/main.js"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "glob": "^10.2.6",
+    "kolorist": "^1.8.0",
+    "lodash": "^4.17.21"
+  }
+}
