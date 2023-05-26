@@ -3,7 +3,7 @@ const Logger = require('./lib/Logger');
 const ClassroomController = require('./controllers/ClassroomController');
 const SubjectController = require('./controllers/SubjectController');
 const StudentController = require('./controllers/StudentController');
-const GroupController = require('./controllers/BatchController');
+const BatchController = require('./controllers/BatchController');
 
 
 // Add logger global
@@ -13,10 +13,10 @@ globalThis.LOGGER = Logger;
 globalThis.CLASSROOMS = ClassroomController;
 globalThis.STUDENTS = StudentController;
 globalThis.SUBJECTS = SubjectController;
-globalThis.GROUPS = GroupController;
+globalThis.BATCHES = BatchController;
 
 (async function() {
-    await Input.loadDataset('dockinga17-03-2022');
+    await Input.loadDataset('dockinga-ob17-03-2022');
 
     CLASSROOMS.load();
     SUBJECTS.load();
@@ -25,5 +25,5 @@ globalThis.GROUPS = GroupController;
     SUBJECTS._generateFlags();
     STUDENTS._generateCurriculumHashes();
 
-    GROUPS.create();
+    BATCHES.create();
 })();
