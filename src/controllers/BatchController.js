@@ -1,5 +1,6 @@
 const ControllerClass = require('../lib/ControllerClass');
 const Config = require('../lib/Config');
+const { chunkify } = require('../lib/utils')
 
 module.exports = class BatchController extends ControllerClass() {
     static create() {
@@ -8,17 +9,17 @@ module.exports = class BatchController extends ControllerClass() {
         const groups = [];
 
         studentsByGroup.forEach(group => {
-            this._createBatch(group);
+            this._createBatches(group);
         })
     }
 
-    static _createBatch(group) {
-        const numberOfBatches = Math.ceil(group.students.length / Config.get('STUDENTS_PER_BATCH_MAX'));
-        if(numberOfBatches <= 1) {
-            return [ group.students ];
-        }
+    static _createBatches(group) {
+        const maxStudentsPerBatch = Config.get('STUDENTS_PER_BATCH_MAX');
+        const targetNumberOfBatches = Math.round(group.students.length / maxStudentsPerBatch);
 
-        const studentsSortedByCurriculumHashDiff = group.students.sort((a, b) => a.curriculumHash < b.curriculumHash ? -1 : 1);
+        return chunkify(group, targetNumberOfBatches)
+        
+        // const studentsSortedByCurriculumHashDiff = group.students.sort((a, b) => a.curriculumHash < b.curriculumHash ? -1 : 1);
         // console.log(JSON.stringify(studentsSortedByCurriculumHashDiff)+'\r\n\r\n');
     }
 
