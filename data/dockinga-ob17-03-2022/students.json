@@ -1,0 +1,6188 @@
+[
+  {
+    "id": 2,
+    "name": "Jessyca Prohaska",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Joy Nico Kessler",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Leland Brown",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Zion Labadie",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Gideon Bartoletti",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Molly Kennedy Rohan",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Caroline Dakota Block",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Levi Greenholt",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Ashleigh Weimann",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Joey Rippin",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Freida Schimmel",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Syble Logan River Weber",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Arne Jast",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Favian Haag",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Miguel North Collins",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Pauline Wiegand",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Elissa Lemke",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Howell Bode",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "America West",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Dejah Elliott Reese Hansen",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Elliot Rice",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Maryjane Windler",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Mabelle Altenwerth",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Luz Hermann",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Carlotta Herzog",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Kendra Powlowski",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Jermain Dicki",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Sophie Kai Yost",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Nina Bailey",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Lenore Champlin",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Nellie Taylor Ritchie",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Kailyn Sipes",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Cortney Klocko",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Colin Ryan Gorczany",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Isobel Breitenberg",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Kaya Kovacek",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Kamryn Kshlerin",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Cordie Anderson",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Annamae Steuber",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Kelli Ruecker",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Breanne Padberg",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Nicklaus Lindgren",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Reymundo Blanda",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Eli Wisoky",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Josefa Lind",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Tristian Considine",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Tyreek Phoenix McClure",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Yessenia Kulas",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Eric Upton",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Kattie McKenzie",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Rita Zieme",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Rosemary Jordan Crooks",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Jasen Bailey Little",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Eleazar Elliott Legros",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Melba Bogisich",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Everette Windler",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Arne Waelchi",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Sherwood Rogahn",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Lisandro Keeling",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Giovanny Kuhlman",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Bonnie Reagan Wolf",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Korbin Shiloh Bashirian",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Dennis Zulauf",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Shania Addison Jacobs",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Kaelyn Balistreri",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Allen Kerluke",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Laron Zboncak",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Aaliyah Terry",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Davin Green",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Serenity Schaden",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Gayle Ryan",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Abner Cruickshank",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Marcelle Angel Orn",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Charley Hauck",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Milton Barrows",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Mylene Howe",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Bria Reese Christiansen",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Stacy Abbott",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 159,
+    "name": "Karine Schroeder",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Jesse Cole",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Lucio Treutel",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Kameron Beer",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Darius Ryan Micah Cronin",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Irma Buckridge",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 176,
+    "name": "Moshe Wehner",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 181,
+    "name": "Julia Mayer",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Luz Goyette",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 184,
+    "name": "Montana Bosco",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 189,
+    "name": "Elliott Avery Price",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 190,
+    "name": "Valentina Riley River Wisozk",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 191,
+    "name": "Colt Emard",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 198,
+    "name": "Kiarra Casper",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 199,
+    "name": "Tyree Haley",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 200,
+    "name": "Harrison Quinn Avery Bradtke",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 201,
+    "name": "Douglas Kassulke",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Emil Boyle",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Maudie HARTmann",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Nyah Osinski",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Jade Lemke",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Jerel James Kendall Kunde",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 211,
+    "name": "Verdie Schroeder",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 212,
+    "name": "Kristofer Taylor Kirlin",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 219,
+    "name": "Jacinto Crona",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 222,
+    "name": "Aylin Kerluke",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 228,
+    "name": "Cooper Balistreri",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 230,
+    "name": "Ethyl Keeling",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 231,
+    "name": "Alysa Robel",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 238,
+    "name": "Jennings Anderson Noah Schoen",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 239,
+    "name": "Delphine Kling",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 240,
+    "name": "Dusty Terry",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 241,
+    "name": "Taryn Johns",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Bertram Schimmel",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 244,
+    "name": "Aimee James Denesik",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 246,
+    "name": "Otho Auer",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 247,
+    "name": "Katelin Baumbach",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 248,
+    "name": "Kenneth Veum",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 250,
+    "name": "Clara Langworth",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 251,
+    "name": "Macie River Shiloh Flatley",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 252,
+    "name": "Abner Logan CARTwright",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 253,
+    "name": "Adriel Robin Hamill",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 263,
+    "name": "Alia Marquardt",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 265,
+    "name": "Kenyatta Taylor Trantow",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 266,
+    "name": "Florence Leannon",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 269,
+    "name": "Mariela Kautzer",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 274,
+    "name": "Santina Ziemann",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 275,
+    "name": "Alana Wiegand",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 276,
+    "name": "Peggie Kunze",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 277,
+    "name": "Jamir Steuber",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 278,
+    "name": "Thurman Rohan",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 279,
+    "name": "Norene Kris",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 282,
+    "name": "Lavern Abshire",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 284,
+    "name": "Herman Kuphal",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 285,
+    "name": "Cleve Ziemann",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 287,
+    "name": "Owen Kendall Krajcik",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 289,
+    "name": "Marvin Batz",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 290,
+    "name": "Walker Treutel",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 291,
+    "name": "Meta Strosin",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 292,
+    "name": "Leonard Friesen",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 299,
+    "name": "Orlo Jordan Runolfsson",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 302,
+    "name": "Keon Addison Heathcote",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 304,
+    "name": "Vergie Dach",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 309,
+    "name": "Adrien Bogisich",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 310,
+    "name": "Rubye Rutherford",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 321,
+    "name": "Gardner Zieme",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 322,
+    "name": "John Homenick",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 323,
+    "name": "Jacques Grant",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 334,
+    "name": "Bret Heller",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 335,
+    "name": "Angela Kshlerin",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 336,
+    "name": "Enoch Russel",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 339,
+    "name": "Sanford Shawn Price",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 341,
+    "name": "Irving Beer",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 342,
+    "name": "Elsie Smitham",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 344,
+    "name": "Tess Cummerata",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 345,
+    "name": "Laney Ankunding",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 346,
+    "name": "Augusta Schuppe",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 347,
+    "name": "Nyah Durgan",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 348,
+    "name": "Myrtle Kendall Veum",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 349,
+    "name": "Shana Braun",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 350,
+    "name": "Vicente Homenick",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 352,
+    "name": "Roy Abshire",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 353,
+    "name": "Jalyn Drew Bowie Gislason",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 356,
+    "name": "Camren Stoltenberg",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 357,
+    "name": "Delores Anderson Addison Denesik",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 361,
+    "name": "Van Ellis Kilback",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 362,
+    "name": "Vito Dibbert",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 365,
+    "name": "Bo Jamie O'Reilly",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 367,
+    "name": "Asha Austin Predovic",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 371,
+    "name": "Prince Parker Shanahan",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 372,
+    "name": "Iliana Sanford",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 373,
+    "name": "Vance Kendall Grant",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 375,
+    "name": "Eva Cruickshank",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 376,
+    "name": "Josiane Sipes",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 378,
+    "name": "Reta Braun",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 380,
+    "name": "Henderson Rogahn",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 382,
+    "name": "Marjolaine Cronin",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 386,
+    "name": "Luz Mann",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 392,
+    "name": "Kacie Mante",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 393,
+    "name": "Bethany Nader",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 397,
+    "name": "Joshua Moore",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 404,
+    "name": "Leonor Murray",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 405,
+    "name": "Marcelina Hahn",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 406,
+    "name": "Colten River London Romaguera",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 408,
+    "name": "Emelie Klocko",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 411,
+    "name": "Adrain August Jaden Larson",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 412,
+    "name": "Ubaldo Schroeder",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 414,
+    "name": "Linnie Robin Mante",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 415,
+    "name": "Moises Steuber",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 418,
+    "name": "Michaela Gerlach",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 419,
+    "name": "Ezra Hayden Sage Mosciski",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 420,
+    "name": "Savion Williamson",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 421,
+    "name": "Megane Kreiger",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 422,
+    "name": "Ambrose Legros",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 423,
+    "name": "Hadley Jenkins",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 426,
+    "name": "Andrew Schiller",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 427,
+    "name": "Retta Grimes",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 428,
+    "name": "Jaden Volkman",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 429,
+    "name": "Laisha Ruecker",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 433,
+    "name": "Eugene Kai Robin Kuvalis",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 434,
+    "name": "Cheyenne Murphy",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 438,
+    "name": "Casey Pacocha",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 445,
+    "name": "Russ Miller",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 451,
+    "name": "Kaylin Sawyer Austin Jakubowski",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 452,
+    "name": "Chaya Collins",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 453,
+    "name": "Damien Bradtke",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 454,
+    "name": "Vinnie Waelchi",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 455,
+    "name": "Sofia Fadel",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 457,
+    "name": "Uriel Torp",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 461,
+    "name": "Ashlee Leuschke",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 462,
+    "name": "Jaydon Little",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 467,
+    "name": "Pat Kshlerin",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 469,
+    "name": "Shane Marks",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 471,
+    "name": "Valentina Collins",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 473,
+    "name": "Chase Jenkins",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 476,
+    "name": "Wilburn Morissette",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 482,
+    "name": "Chris Hyatt",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 486,
+    "name": "Quentin Stroman",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 488,
+    "name": "Florence Hamill",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 489,
+    "name": "Helen Waelchi",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 492,
+    "name": "Noel Miller",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 493,
+    "name": "Austen Cummings",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 500,
+    "name": "Jasen Will",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 501,
+    "name": "Terrell Koss",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 502,
+    "name": "Wilhelm Osinski",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 503,
+    "name": "Lindsay Borer",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 505,
+    "name": "Drake Jordan Homenick",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 507,
+    "name": "Okey Durgan",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 508,
+    "name": "Ruthie McCullough",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 509,
+    "name": "Koby Schuppe",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 510,
+    "name": "Miles Cummerata",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 511,
+    "name": "Elisa Bergstrom",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 512,
+    "name": "Devyn Koch",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 513,
+    "name": "Jairo Ratke",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 518,
+    "name": "Edmond Pouros",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 519,
+    "name": "Elisa Lebsack",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 521,
+    "name": "Hattie Sawyer Conn",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 524,
+    "name": "Desiree Bergnaum",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 525,
+    "name": "Romaine Rosenbaum",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 526,
+    "name": "Lemuel Zieme",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 527,
+    "name": "Kelsi Douglas",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 529,
+    "name": "Edyth Mann",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 532,
+    "name": "Betsy Ritchie",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 533,
+    "name": "Saul Ruecker",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 534,
+    "name": "Fletcher Brooklyn Lemke",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 535,
+    "name": "Claudia Bernhard",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 538,
+    "name": "Erwin Spencer",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 539,
+    "name": "Isabel MacGyver",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 540,
+    "name": "Carolyn Brakus",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 551,
+    "name": "Elenor Bogan",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 553,
+    "name": "Josephine Fisher",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 558,
+    "name": "Tina Deckow",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 560,
+    "name": "Letitia Johns",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 561,
+    "name": "Barbara Wisozk",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 563,
+    "name": "Jamar Dakota Dach",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 564,
+    "name": "Katelynn Lynch",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 565,
+    "name": "Freeman Rowan Bednar",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 567,
+    "name": "Corene Senger",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 572,
+    "name": "Marilou Nolan",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 573,
+    "name": "Trycia Monahan",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 575,
+    "name": "Kylie Adams",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 578,
+    "name": "Bethel Ruecker",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 580,
+    "name": "Jefferey Abbott",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 581,
+    "name": "Cayla Krajcik",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 582,
+    "name": "Araceli Quinn Crist",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 583,
+    "name": "Reyes Gleichner",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 584,
+    "name": "Grant Phoenix Jamie Koelpin",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 586,
+    "name": "Irma Pollich",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 589,
+    "name": "Mckenzie O'Keefe",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 590,
+    "name": "Uriah Hermiston",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 593,
+    "name": "Arlo Elliott Reese Walter",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 594,
+    "name": "Walter O'Kon",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 596,
+    "name": "Maxie Nitzsche",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 602,
+    "name": "Mervin Aufderhar",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 603,
+    "name": "Meta Schmitt",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 604,
+    "name": "Emory Harper Fay",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 605,
+    "name": "Sister Yost",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 606,
+    "name": "Macey Gray Bowie Nikolaus",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 607,
+    "name": "Santiago Mann",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 608,
+    "name": "Dave Bernier",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 609,
+    "name": "Kelli Taylor Will",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 610,
+    "name": "Elvie Cameron Streich",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 611,
+    "name": "Juanita Green",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 612,
+    "name": "Matilda Wyman",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 613,
+    "name": "Kara Drew Schmeler",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 625,
+    "name": "Eliane Reinger",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "GRK",
+      "HIS",
+      "LAT",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 626,
+    "name": "Moshe Wyman",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 627,
+    "name": "Brianne Parisian",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 628,
+    "name": "Maverick Lowe",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 629,
+    "name": "Claudia Alex Koss",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 630,
+    "name": "Laverne Muller",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 631,
+    "name": "Amiya Bergnaum",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 635,
+    "name": "Linda Brakus",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 638,
+    "name": "Stephon Riley Boyle",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 639,
+    "name": "Billie Koss",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 640,
+    "name": "Leland Kassulke",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 643,
+    "name": "Joel Harris",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 645,
+    "name": "Nathanael Rice",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 648,
+    "name": "Malcolm Finley Phoenix Adams",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 651,
+    "name": "Delta Miller",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 653,
+    "name": "Viola Bailey Nienow",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 656,
+    "name": "Peter Schmidt",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 657,
+    "name": "Carroll Noah Cameron Brakus",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 659,
+    "name": "Denis Kihn",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 660,
+    "name": "Lorine Fisher",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 661,
+    "name": "Yessenia Wiza",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 662,
+    "name": "Ruthie Reagan Rosenbaum",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 666,
+    "name": "Treva Jacobson",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 667,
+    "name": "Kiley Bahringer",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 670,
+    "name": "Emmett Sauer",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 671,
+    "name": "Jensen Willms",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 672,
+    "name": "Marcelina Runolfsson",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 674,
+    "name": "Dortha Stracke",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 676,
+    "name": "Rosina Dakota Hayes",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 679,
+    "name": "Flavio Austin Konopelski",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 680,
+    "name": "Hallie Jast",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 683,
+    "name": "Hoyt Gibson",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 685,
+    "name": "Aisha Bosco",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 688,
+    "name": "Manley Jamie Barton",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SCI",
+      "SOC"
+    ]
+  },
+  {
+    "id": 689,
+    "name": "Javonte Botsford",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 692,
+    "name": "Edwin Schoen",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  }
+]

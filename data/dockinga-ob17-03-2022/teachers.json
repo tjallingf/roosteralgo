@@ -1,0 +1,677 @@
+[
+  {
+    "id": 0,
+    "name": "B. Becker",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "mon",
+        "isAllDay": false,
+        "from": "12:00",
+        "to": "16:00"
+      },
+      {
+        "type": "leave",
+        "day": "tue",
+        "isAllDay": true
+      },
+      {
+        "type": "leave",
+        "day": "fri",
+        "isAllDay": false,
+        "from": "11:00",
+        "to": "17:00"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "D. Grant",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "fri",
+        "isAllDay": false,
+        "from": "8:00",
+        "to": "14:00"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "M. Haley",
+    "requests": []
+  },
+  {
+    "id": 3,
+    "name": "Mr. G. Cummings",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "tue",
+        "isAllDay": true
+      },
+      {
+        "type": "leave",
+        "day": "wed",
+        "isAllDay": true
+      },
+      {
+        "type": "leave",
+        "day": "fri",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "L.K. Gerlach",
+    "requests": []
+  },
+  {
+    "id": 5,
+    "name": "C. Kshlerin",
+    "requests": []
+  },
+  {
+    "id": 6,
+    "name": "Miss I. Bernhard",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "mon",
+        "isAllDay": false,
+        "from": "9:00",
+        "to": "17:00"
+      },
+      {
+        "type": "leave",
+        "day": "fri",
+        "isAllDay": true
+      },
+      {
+        "type": "leave",
+        "day": "thu",
+        "isAllDay": false,
+        "from": "7:00",
+        "to": "13:00"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "B. Pfannerstill",
+    "requests": []
+  },
+  {
+    "id": 8,
+    "name": "Ms. P. Rippin",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "thu",
+        "isAllDay": true
+      },
+      {
+        "type": "unavailable",
+        "day": "tue",
+        "isAllDay": false,
+        "from": "12:00",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "D.M. Jerde",
+    "requests": []
+  },
+  {
+    "id": 10,
+    "name": "Mrs. S. Wolf",
+    "requests": []
+  },
+  {
+    "id": 11,
+    "name": "B. Gorczany",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "tue",
+        "isAllDay": true
+      },
+      {
+        "type": "unavailable",
+        "day": "wed",
+        "isAllDay": true
+      },
+      {
+        "type": "unavailable",
+        "day": "fri",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "J. Jast",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "fri",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Dr. K.O. Runte",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "wed",
+        "isAllDay": false,
+        "from": "7:00",
+        "to": "10:00"
+      },
+      {
+        "type": "leave",
+        "day": "tue",
+        "isAllDay": true
+      },
+      {
+        "type": "leave",
+        "day": "fri",
+        "isAllDay": false,
+        "from": "7:00",
+        "to": "13:00"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Miss K. Rice",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "thu",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "J. Veum",
+    "requests": []
+  },
+  {
+    "id": 16,
+    "name": "B. Schowalter",
+    "requests": []
+  },
+  {
+    "id": 17,
+    "name": "Mrs. F. Conroy",
+    "requests": []
+  },
+  {
+    "id": 18,
+    "name": "T. Cremin",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "mon",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Mr. M. Spencer",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "thu",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Mrs. C.S. Orn",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "mon",
+        "isAllDay": false,
+        "from": "10:00",
+        "to": "17:00"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "V. Bode",
+    "requests": []
+  },
+  {
+    "id": 22,
+    "name": "B.J. Hansen",
+    "requests": []
+  },
+  {
+    "id": 23,
+    "name": "M.J. Vandervort",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "wed",
+        "isAllDay": false,
+        "from": "10:00",
+        "to": "15:00"
+      },
+      {
+        "type": "leave",
+        "day": "thu",
+        "isAllDay": false,
+        "from": "11:00",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Mr. D. Christiansen",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "mon",
+        "isAllDay": false,
+        "from": "7:00",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "L. Haley",
+    "requests": []
+  },
+  {
+    "id": 26,
+    "name": "Miss M.J. Simonis",
+    "requests": []
+  },
+  {
+    "id": 27,
+    "name": "Ms. J. Kihn",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "tue",
+        "isAllDay": true
+      },
+      {
+        "type": "unavailable",
+        "day": "wed",
+        "isAllDay": false,
+        "from": "8:00",
+        "to": "15:00"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "A.B. Kilback",
+    "requests": []
+  },
+  {
+    "id": 29,
+    "name": "Dr. D. Labadie",
+    "requests": []
+  },
+  {
+    "id": 30,
+    "name": "Ms. K.N. Berge",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "tue",
+        "isAllDay": false,
+        "from": "7:00",
+        "to": "13:00"
+      },
+      {
+        "type": "unavailable",
+        "day": "thu",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "D.R. Wilkinson",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "tue",
+        "isAllDay": false,
+        "from": "10:00",
+        "to": "17:00"
+      },
+      {
+        "type": "leave",
+        "day": "wed",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "A. Grimes",
+    "requests": []
+  },
+  {
+    "id": 33,
+    "name": "E.C.M. Adams",
+    "requests": []
+  },
+  {
+    "id": 34,
+    "name": "P. Morar",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "wed",
+        "isAllDay": false,
+        "from": "7:00",
+        "to": "13:00"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "W. Walker",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "thu",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "I. Homenick",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "tue",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Ms. J. Reinger",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "thu",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Dr. G.E. Walter",
+    "requests": []
+  },
+  {
+    "id": 39,
+    "name": "C.A. Bode",
+    "requests": []
+  },
+  {
+    "id": 40,
+    "name": "Mrs. L.R. Dietrich",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "fri",
+        "isAllDay": false,
+        "from": "11:00",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Miss N. Goyette",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "mon",
+        "isAllDay": false,
+        "from": "9:00",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Miss R. Bahringer",
+    "requests": []
+  },
+  {
+    "id": 43,
+    "name": "S. Emmerich",
+    "requests": []
+  },
+  {
+    "id": 44,
+    "name": "Mrs. T. Kerluke",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "thu",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Ms. S. Kertzmann",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "fri",
+        "isAllDay": true
+      },
+      {
+        "type": "unavailable",
+        "day": "thu",
+        "isAllDay": true
+      },
+      {
+        "type": "leave",
+        "day": "wed",
+        "isAllDay": false,
+        "from": "8:00",
+        "to": "15:00"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "B. Nikolaus",
+    "requests": []
+  },
+  {
+    "id": 47,
+    "name": "Mrs. S. Ratke",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "tue",
+        "isAllDay": false,
+        "from": "8:00",
+        "to": "13:00"
+      },
+      {
+        "type": "leave",
+        "day": "fri",
+        "isAllDay": false,
+        "from": "9:00",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "A. Homenick",
+    "requests": []
+  },
+  {
+    "id": 49,
+    "name": "V. Larson",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "fri",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Dr. D. Pagac",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "mon",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "C. Cormier",
+    "requests": []
+  },
+  {
+    "id": 52,
+    "name": "Mrs. E. Kling",
+    "requests": []
+  },
+  {
+    "id": 53,
+    "name": "Miss A.J. Robel",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "thu",
+        "isAllDay": false,
+        "from": "12:00",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Mrs. B. Blanda",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "fri",
+        "isAllDay": false,
+        "from": "9:00",
+        "to": "12:00"
+      },
+      {
+        "type": "unavailable",
+        "day": "thu",
+        "isAllDay": false,
+        "from": "10:00",
+        "to": "15:00"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "D. Armstrong",
+    "requests": [
+      {
+        "type": "unavailable",
+        "day": "fri",
+        "isAllDay": false,
+        "from": "7:00",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "A. Cremin",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "fri",
+        "isAllDay": false,
+        "from": "11:00",
+        "to": "16:00"
+      },
+      {
+        "type": "leave",
+        "day": "mon",
+        "isAllDay": false,
+        "from": "11:00",
+        "to": "17:00"
+      },
+      {
+        "type": "leave",
+        "day": "thu",
+        "isAllDay": true
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Mr. S. Brown",
+    "requests": []
+  },
+  {
+    "id": 58,
+    "name": "Dr. J. Collier",
+    "requests": []
+  },
+  {
+    "id": 59,
+    "name": "Mrs. A. Yundt",
+    "requests": []
+  },
+  {
+    "id": 60,
+    "name": "A. Greenfelder",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "mon",
+        "isAllDay": false,
+        "from": "8:00",
+        "to": "13:00"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "M. Rolfson",
+    "requests": [
+      {
+        "type": "leave",
+        "day": "tue",
+        "isAllDay": true
+      }
+    ]
+  }
+]
