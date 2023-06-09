@@ -21,9 +21,5 @@ globalThis.BATCHES = BatchController;
     CLASSROOMS.load();
     SUBJECTS.load();
     STUDENTS.load();
-
-    // SUBJECTS._generateFlags();
-    // STUDENTS._generateCurriculumHashes();
-
-    // BATCHES.create();
+    BATCHES.load();
 })();
