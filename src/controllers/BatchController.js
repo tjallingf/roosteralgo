@@ -1,40 +1,21 @@
 const ControllerClass = require('../lib/ControllerClass');
 const Config = require('../lib/Config');
+const { chunkify } = require('../lib/utils');
+const StudentController = require('../controllers/StudentController');
 
 module.exports = class BatchController extends ControllerClass() {
     static create() {
-        const studentsByGroup = this._allStudentsByGroup();
+        const students = StudentController.all();
 
-        const groups = [];
+        students.forEach(student => {
+            const batch = new Batch({
+                id: student.id,
+                year: student.year,
+                level: student.education
+            });
+            batch.addStudent(student);
 
-        studentsByGroup.forEach(group => {
-            this._createBatch(group);
+            this.storeItem(batch);
         })
-    }
-
-    static _createBatch(group) {
-        const numberOfBatches = Math.ceil(group.students.length / Config.get('STUDENTS_PER_BATCH_MAX'));
-        if(numberOfBatches <= 1) {
-            return [ group.students ];
-        }
-
-        const studentsSortedByCurriculumHashDiff = group.students.sort((a, b) => a.curriculumHash < b.curriculumHash ? -1 : 1);
-        // console.log(JSON.stringify(studentsSortedByCurriculumHashDiff)+'\r\n\r\n');
-    }
-
-    static _allStudentsByGroup() {
-        const byGroup = {};
-
-        STUDENTS.all().forEach(student => {
-            if(!byGroup[student.groupId]) {
-                byGroup[student.groupId] = [];
-            }
-
-            byGroup[student.groupId].push(student);
-        })
-
-        return Object.entries(byGroup).map(([ id, students ]) => ({
-            id, students
-        }));
     }
 }

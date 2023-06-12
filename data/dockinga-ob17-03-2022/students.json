@@ -1,0 +1,118 @@
+[
+  {
+    "id": 2,
+    "name": "HAVO_3",
+    "education": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "CHE",
+      "SOC"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "VWO_1",
+    "education": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "VWO_3",
+    "education": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "CHE",
+      "SOC"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "HAVO_2",
+    "education": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "VWO_2",
+    "education": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "SOC"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "HAVO_1",
+    "education": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "PED",
+      "SOC"
+    ]
+  }
+]

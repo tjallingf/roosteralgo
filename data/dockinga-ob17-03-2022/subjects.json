@@ -1,0 +1,138 @@
+[
+  {
+    "id": "ART",
+    "teachers": [
+      34,
+      35,
+      36
+    ]
+  },
+  {
+    "id": "BIO",
+    "teachers": [
+      38,
+      39,
+      40
+    ]
+  },
+  {
+    "id": "BUE",
+    "teachers": [
+      61
+    ]
+  },
+  {
+    "id": "DUL",
+    "teachers": [
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "id": "ECO",
+    "teachers": [
+      30,
+      31
+    ]
+  },
+  {
+    "id": "ENG",
+    "teachers": [
+      59
+    ]
+  },
+  {
+    "id": "ENL",
+    "teachers": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "FRL",
+    "teachers": [
+      20,
+      21
+    ]
+  },
+  {
+    "id": "GEO",
+    "teachers": [
+      24,
+      25
+    ]
+  },
+  {
+    "id": "GEL",
+    "teachers": [
+      48,
+      49
+    ]
+  },
+  {
+    "id": "GRK",
+    "teachers": [
+      29
+    ]
+  },
+  {
+    "id": "HIS",
+    "teachers": [
+      42,
+      43
+    ]
+  },
+  {
+    "id": "LAT",
+    "teachers": [
+      27,
+      28
+    ]
+  },
+  {
+    "id": "MAT",
+    "teachers": [
+      13,
+      14
+    ]
+  },
+  {
+    "id": "MUS",
+    "teachers": [
+      50,
+      51
+    ]
+  },
+  {
+    "id": "PED",
+    "teachers": [
+      53,
+      54,
+      55,
+      56
+    ]
+  },
+  {
+    "id": "PHY",
+    "teachers": [
+      17,
+      18,
+      19
+    ]
+  },
+  {
+    "id": "CHE",
+    "teachers": [
+      57,
+      58
+    ]
+  },
+  {
+    "id": "SOC",
+    "teachers": [
+      60
+    ]
+  }
+]

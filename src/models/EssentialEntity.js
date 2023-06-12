@@ -12,4 +12,8 @@ module.exports = class EssentialEntity extends Entity {
     isAvailable(hour) {
 
     }
+
+    setAvailability(hour, isAvailable) {
+        
+    }
 }
