@@ -1,0 +1,12 @@
+04-07-2023
+    - Entity.getCombiLink() toegevoegd
+    - * wildcard toegevoegd voor context
+
+06-07-2023
+    - Period.getMedianDistance() toegevoegd
+    - PeriodController.allSortedByMedianDistance() toegevoegd
+    - Seeding priority voor subjects toegevoegd
+    - Onjuiste formule voor period.getDay():
+        this.config.id % (Config.get('NUMBER_OF_PERIODS_PER_WEEK') / 5);
+    - Opgelost:
+        
