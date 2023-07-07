@@ -1,7 +1,7 @@
-const path = require('node:path');
-const fs = require('node:fs');
-const { DATA_DIR } = require('./constants.js');
-const { glob } = require('glob');
+import * as path from 'node:path';
+import * as fs from 'node:fs';
+import { DATA_DIR } from './constants';
+import { glob } from 'glob';
 
 class InputClass {
     #data;
@@ -27,7 +27,9 @@ class InputClass {
             const filename = path.parse(fp).name;
             const contents = JSON.parse(fs.readFileSync(fp, 'utf8'));
 
-            LOGGER.info(`Found ${contents.length} ${filename}.`);
+            if(Array.isArray(contents)) {
+                $logger.info(`Found ${contents.length} ${filename}.`);
+            }
 
             data[filename] = contents;
         })
@@ -42,4 +44,4 @@ class InputClass {
 }
 
 const Input = new InputClass();
-module.exports = Input;
+export default Input;

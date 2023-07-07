@@ -2,65 +2,35 @@
   {
     "id": 0,
     "name": "B. Becker",
-    "requests": [
-      {
-        "type": "unavailable",
-        "day": "mon",
-        "isAllDay": false,
-        "from": "12:00",
-        "to": "16:00"
-      },
-      {
-        "type": "leave",
-        "day": "tue",
-        "isAllDay": true
-      },
-      {
-        "type": "leave",
-        "day": "fri",
-        "isAllDay": false,
-        "from": "11:00",
-        "to": "17:00"
-      }
+    "grades": [
+      [{"year":[3]}, 1],
+      [{"year":[1]}, 0.6]
+    ],
+    "classrooms": [
+      [{"id":["E078"]},0.5]
     ]
   },
   {
     "id": 1,
     "name": "D. Grant",
-    "requests": [
-      {
-        "type": "leave",
-        "day": "fri",
-        "isAllDay": false,
-        "from": "8:00",
-        "to": "14:00"
-      }
+    "grades": [
+      [{"year":1}, 1],
+      [{"year":2}, 0.7]
     ]
   },
   {
     "id": 2,
     "name": "M. Haley",
-    "requests": []
+    "grades": [
+      [{"year":[2,3]}, 1],
+      [{"year":[1]}, 0.6]
+    ]
   },
   {
     "id": 3,
     "name": "Mr. G. Cummings",
-    "requests": [
-      {
-        "type": "leave",
-        "day": "tue",
-        "isAllDay": true
-      },
-      {
-        "type": "leave",
-        "day": "wed",
-        "isAllDay": true
-      },
-      {
-        "type": "leave",
-        "day": "fri",
-        "isAllDay": true
-      }
+    "classrooms": [
+      [{"id":["E078"]}, 2]
     ]
   },
   {
@@ -660,17 +630,6 @@
         "isAllDay": false,
         "from": "8:00",
         "to": "13:00"
-      }
-    ]
-  },
-  {
-    "id": 61,
-    "name": "M. Rolfson",
-    "requests": [
-      {
-        "type": "leave",
-        "day": "tue",
-        "isAllDay": true
       }
     ]
   }

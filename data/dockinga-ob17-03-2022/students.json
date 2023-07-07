@@ -1,28 +1,8 @@
 [
-  {
-    "id": 2,
-    "name": "HAVO_3",
-    "education": "HAVO",
-    "year": 3,
-    "subjects": [
-      "DUL",
-      "ECO",
-      "ENL",
-      "FRL",
-      "GEO",
-      "GEL",
-      "HIS",
-      "MAT",
-      "PED",
-      "PHY",
-      "CHE",
-      "SOC"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "VWO_1",
-    "education": "VWO",
+    {
+    "id": 1,
+    "name": "1_HAVO",
+    "level": "HAVO",
     "year": 1,
     "subjects": [
       "BIO",
@@ -38,29 +18,27 @@
     ]
   },
   {
-    "id": 8,
-    "name": "VWO_3",
-    "education": "VWO",
-    "year": 3,
+    "id": 3,
+    "name": "1_VWO",
+    "level": "VWO",
+    "year": 1,
     "subjects": [
+      "BIO",
       "DUL",
-      "ECO",
+      "ENG",
       "ENL",
       "FRL",
       "GEO",
-      "GEL",
       "HIS",
       "MAT",
       "PED",
-      "PHY",
-      "CHE",
       "SOC"
     ]
   },
   {
     "id": 10,
-    "name": "HAVO_2",
-    "education": "HAVO",
+    "name": "2_HAVO",
+    "level": "HAVO",
     "year": 2,
     "subjects": [
       "BIO",
@@ -79,8 +57,8 @@
   },
   {
     "id": 15,
-    "name": "VWO_2",
-    "education": "VWO",
+    "name": "2_VWO",
+    "level": "VWO",
     "year": 2,
     "subjects": [
       "BIO",
@@ -98,20 +76,42 @@
     ]
   },
   {
-    "id": 16,
-    "name": "HAVO_1",
-    "education": "HAVO",
-    "year": 1,
+    "id": 2,
+    "name": "3_HAVO",
+    "level": "HAVO",
+    "year": 3,
     "subjects": [
-      "BIO",
       "DUL",
-      "ENG",
+      "ECO",
       "ENL",
       "FRL",
       "GEO",
+      "GEL",
       "HIS",
       "MAT",
       "PED",
+      "PHY",
+      "CHE",
+      "SOC"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "3_VWO",
+    "level": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PED",
+      "PHY",
+      "CHE",
       "SOC"
     ]
   }

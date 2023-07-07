@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "types": ["./@types/global.d.ts"],
+        "module": "commonjs",
+        "target": "es2021",
+        "strict": true,
+        "noImplicitAny": false,
+        "strictPropertyInitialization": false,
+        "moduleResolution": "nodenext",
+        "allowSyntheticDefaultImports": true,
+        "rootDir": "./src/",
+        "outDir": "./dist/"
+    }
+}

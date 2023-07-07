@@ -19,20 +19,20 @@ class LoggerClass {
         debug: kolorist.magenta
     }
 
-    constructor(defaultOptions) {
+    constructor(defaultOptions = null) {
         if(defaultOptions) {
             this.defaultOptions = defaultOptions;
         }
     }
 
     child(defaultOptions) {
-        return new Logger(defaultOptions);
+        return new LoggerClass(defaultOptions);
     }
 
     print(data, options) {
         options = _.defaults(options, this.defaultOptions);
-        const line = [];
-        let message;
+        const line: any[] = [];
+        let message: string;
 
         // MESSAGE
         if(data instanceof Error) {           
@@ -79,26 +79,26 @@ class LoggerClass {
         return kolorist.italic(kolorist.gray(dayjs().format('HH:mm:ss.SSS')));
     }
 
-    error(message, options) {
+    error(message: any, options = {}) {
         this.print(message, { ...options, level: 'error' });
     }
 
-    warn(message, options) {
+    warn(message: any, options = {}) {
         this.print(message, { ...options, level: 'warn' });
     }
 
-    info(message, options) {
+    info(message: any, options = {}) {
         this.print(message, { ...options, level: 'info' });
     }
 
-    notice(message, options) {
+    notice(message: any, options = {}) {
         this.print(message, { ...options, level: 'notice' });
     }
 
-    debug(message, options) {
+    debug(message: any, options = {}) {
         this.print(message, { ...options, level: 'debug' });
     }
 }
 
 const Logger = new LoggerClass();
-module.exports = Logger;
+export default Logger;

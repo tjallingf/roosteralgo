@@ -1,4 +1,4 @@
 {
     "HOURS_PER_DAY": 8,
-    "STUDENTS_PER_BATCH_MAX": 28
+    "$students_PER_BATCH_MAX": 28
 }

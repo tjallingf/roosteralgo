@@ -5,7 +5,9 @@
       34,
       35,
       36
-    ]
+    ],
+    "periods": 2,
+    "consecutivePeriods": 2
   },
   {
     "id": "BIO",
@@ -13,12 +15,9 @@
       38,
       39,
       40
-    ]
-  },
-  {
-    "id": "BUE",
-    "teachers": [
-      61
+    ],
+    "periods": [
+      [{"year": [1,2]}, 2]
     ]
   },
   {
@@ -27,20 +26,30 @@
       7,
       8,
       9
-    ]
+    ],
+    "periods": [
+      [{"year": "*"}, 3]
+    ],
+    "tags": ["CORE"]
   },
   {
     "id": "ECO",
     "teachers": [
-      30,
-      31
+      30
+    ],
+    "periods": [
+      [{"year": 3}, 2]
     ]
   },
   {
     "id": "ENG",
     "teachers": [
       59
-    ]
+    ],
+    "periods": [
+      [{"year": [1,2]}, 2]
+    ],
+    "consecutivePeriods": 2
   },
   {
     "id": "ENL",
@@ -48,13 +57,20 @@
       0,
       1,
       2
-    ]
+    ],
+    "periods": [
+      [{"year": [1,2,3]}, 3]
+    ],
+    "tags": ["CORE"]
   },
   {
     "id": "FRL",
     "teachers": [
       20,
       21
+    ],
+    "periods": [
+      [{"year": [1,2,3]}, 3]
     ]
   },
   {
@@ -62,6 +78,10 @@
     "teachers": [
       24,
       25
+    ],
+    "periods": [
+      [{"year": [1,3]}, 2],
+      [{"year": 2}, 3]
     ]
   },
   {
@@ -69,6 +89,10 @@
     "teachers": [
       48,
       49
+    ],
+    "periods": [
+      [{"year": 2}, 2],
+      [{"year": 3}, 3]
     ]
   },
   {
@@ -82,6 +106,9 @@
     "teachers": [
       42,
       43
+    ],
+    "periods": [
+      [{"year": [1,2,3]}, 2]
     ]
   },
   {
@@ -96,14 +123,23 @@
     "teachers": [
       13,
       14
-    ]
+    ],
+    "periods": [
+      [{"year": 1}, 3],
+      [{"year": [2,3]}, 4]
+    ],
+    "tags": ["CORE"]
   },
   {
     "id": "MUS",
     "teachers": [
       50,
       51
-    ]
+    ],
+    "periods": [
+      [{"year":[1,2,3]}, 2]
+    ],
+    "consecutivePeriods": 2
   },
   {
     "id": "PED",
@@ -112,14 +148,20 @@
       54,
       55,
       56
-    ]
+    ],
+    "periods": [
+      [{"year":[1,2,3]}, 2]
+    ],
+    "consecutivePeriods": 2
   },
   {
     "id": "PHY",
     "teachers": [
       17,
-      18,
-      19
+      18
+    ],
+    "periods": [
+      [{"year":[1,2,3]}, 2]
     ]
   },
   {
@@ -127,12 +169,18 @@
     "teachers": [
       57,
       58
+    ],
+    "periods": [
+      [{"year":3}, 2]
     ]
   },
   {
     "id": "SOC",
     "teachers": [
       60
+    ],
+    "periods": [
+      [{"year":[1,2,3]}, 2]
     ]
   }
 ]

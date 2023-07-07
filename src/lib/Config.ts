@@ -1,6 +1,6 @@
-const Input = require('./Input');
+import Input from './Input';
 
-module.exports = class Config {
+export default class Config {
     static get(item) {
         return Input.get('config')[item];
     }
