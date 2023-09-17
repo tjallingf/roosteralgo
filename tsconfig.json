@@ -6,8 +6,9 @@
         "strict": true,
         "noImplicitAny": false,
         "strictPropertyInitialization": false,
-        "moduleResolution": "nodenext",
+        "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
         "rootDir": "./src/",
         "outDir": "./dist/"
     }

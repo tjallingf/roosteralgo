@@ -1,7 +1,7 @@
 import EntityWithAvailability from '../EntityWithAvailability';
 import { forIn } from 'lodash';
 import Subject from './Subject';
-import { Context, matchContext } from '../../utils/context';
+import Context from '../../lib/Context';
 
 export interface ClassroomConfig {
     id: string,
@@ -40,6 +40,6 @@ export default class Classroom extends EntityWithAvailability<ClassroomConfig> {
     }
 
     getFitness(context: Context) {
-        return matchContext(this.config.fitness, context);
+        return context.match(this.config.fitness);
     }
 }

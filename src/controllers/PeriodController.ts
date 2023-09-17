@@ -27,14 +27,14 @@ export default class PeriodController extends ControllerClass<Period>() {
         return Math.abs(dayIndex - this.meta.medianPeriodDayIndex) + modifier;
     }
 
-    load() {       
-        for (let i = 0; i < $config.get('NUMBER_OF_PERIODS_PER_WEEK'); i++) {
+    load() {      
+        for (let i = 0; i < $config.get('PERIODS_PER_WEEK'); i++) {
             this._storeItem(new Period({ id: i }, this));
         }
     }
 
     getByIndex(index = 0) {
-        const safeIndex = index % $config.get('NUMBER_OF_PERIODS_PER_WEEK');
+        const safeIndex = index % $config.get('PERIODS_PER_WEEK');
         return this.getBy(p => p.config.id === safeIndex);
     }
 

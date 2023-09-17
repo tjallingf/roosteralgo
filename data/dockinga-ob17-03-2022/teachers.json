@@ -1,8 +1,9 @@
 [
   {
     "id": 0,
+    "code": "BeB",
     "name": "B. Becker",
-    "grades": [
+    "scores": [
       [{"year":[3]}, 1],
       [{"year":[1]}, 0.6]
     ],
@@ -12,22 +13,25 @@
   },
   {
     "id": 1,
+    "code": "GrD",
     "name": "D. Grant",
-    "grades": [
+    "scores": [
       [{"year":1}, 1],
       [{"year":2}, 0.7]
     ]
   },
   {
     "id": 2,
+    "code": "HaM",
     "name": "M. Haley",
-    "grades": [
+    "scores": [
       [{"year":[2,3]}, 1],
       [{"year":[1]}, 0.6]
     ]
   },
   {
     "id": 3,
+    "code": "CuM",
     "name": "Mr. G. Cummings",
     "classrooms": [
       [{"id":["E078"]}, 2]
@@ -35,16 +39,19 @@
   },
   {
     "id": 4,
+    "code": "GeL",
     "name": "L.K. Gerlach",
     "requests": []
   },
   {
     "id": 5,
+    "code": "KsC",
     "name": "C. Kshlerin",
     "requests": []
   },
   {
     "id": 6,
+    "code": "BeM",
     "name": "Miss I. Bernhard",
     "requests": [
       {
@@ -70,11 +77,13 @@
   },
   {
     "id": 7,
+    "code": "PfB",
     "name": "B. Pfannerstill",
     "requests": []
   },
   {
     "id": 8,
+    "code": "RiM",
     "name": "Ms. P. Rippin",
     "requests": [
       {
@@ -93,16 +102,19 @@
   },
   {
     "id": 9,
+    "code": "JeD",
     "name": "D.M. Jerde",
     "requests": []
   },
   {
     "id": 10,
-    "name": "Mrs. S. Wolf",
+    "code": "WoS",
+    "name": "S. Wolf",
     "requests": []
   },
   {
     "id": 11,
+    "code": "GoB",
     "name": "B. Gorczany",
     "requests": [
       {
@@ -124,6 +136,7 @@
   },
   {
     "id": 12,
+    "code": "JaJ",
     "name": "J. Jast",
     "requests": [
       {
@@ -135,6 +148,7 @@
   },
   {
     "id": 13,
+    "code": "RuD",
     "name": "Dr. K.O. Runte",
     "requests": [
       {
@@ -160,6 +174,7 @@
   },
   {
     "id": 14,
+    "code": "RiM",
     "name": "Miss K. Rice",
     "requests": [
       {
@@ -171,21 +186,25 @@
   },
   {
     "id": 15,
+    "code": "VeJ",
     "name": "J. Veum",
     "requests": []
   },
   {
     "id": 16,
+    "code": "ScB",
     "name": "B. Schowalter",
     "requests": []
   },
   {
     "id": 17,
-    "name": "Mrs. F. Conroy",
+    "code": "CoF",
+    "name": "F. Conroy",
     "requests": []
   },
   {
     "id": 18,
+    "code": "CrT",
     "name": "T. Cremin",
     "requests": [
       {
@@ -197,6 +216,7 @@
   },
   {
     "id": 19,
+    "code": "SpM",
     "name": "Mr. M. Spencer",
     "requests": [
       {
@@ -208,7 +228,8 @@
   },
   {
     "id": 20,
-    "name": "Mrs. C.S. Orn",
+    "code": "OrC",
+    "name": "C.S. Orn",
     "requests": [
       {
         "type": "unavailable",
@@ -221,16 +242,19 @@
   },
   {
     "id": 21,
+    "code": "BoV",
     "name": "V. Bode",
     "requests": []
   },
   {
     "id": 22,
+    "code": "HaB",
     "name": "B.J. Hansen",
     "requests": []
   },
   {
     "id": 23,
+    "code": "VaM",
     "name": "M.J. Vandervort",
     "requests": [
       {
@@ -251,6 +275,7 @@
   },
   {
     "id": 24,
+    "code": "ChM",
     "name": "Mr. D. Christiansen",
     "requests": [
       {
@@ -264,16 +289,19 @@
   },
   {
     "id": 25,
+    "code": "HaL",
     "name": "L. Haley",
     "requests": []
   },
   {
     "id": 26,
+    "code": "SiM",
     "name": "Miss M.J. Simonis",
     "requests": []
   },
   {
     "id": 27,
+    "code": "KiM",
     "name": "Ms. J. Kihn",
     "requests": [
       {
@@ -292,16 +320,19 @@
   },
   {
     "id": 28,
+    "code": "KiA",
     "name": "A.B. Kilback",
     "requests": []
   },
   {
     "id": 29,
+    "code": "LaD",
     "name": "Dr. D. Labadie",
     "requests": []
   },
   {
     "id": 30,
+    "code": "BeM",
     "name": "Ms. K.N. Berge",
     "requests": [
       {
@@ -320,6 +351,7 @@
   },
   {
     "id": 31,
+    "code": "WiD",
     "name": "D.R. Wilkinson",
     "requests": [
       {
@@ -338,16 +370,19 @@
   },
   {
     "id": 32,
+    "code": "GrA",
     "name": "A. Grimes",
     "requests": []
   },
   {
     "id": 33,
+    "code": "AdE",
     "name": "E.C.M. Adams",
     "requests": []
   },
   {
     "id": 34,
+    "code": "MoP",
     "name": "P. Morar",
     "requests": [
       {
@@ -361,6 +396,7 @@
   },
   {
     "id": 35,
+    "code": "WaW",
     "name": "W. Walker",
     "requests": [
       {
@@ -372,6 +408,7 @@
   },
   {
     "id": 36,
+    "code": "HoI",
     "name": "I. Homenick",
     "requests": [
       {
@@ -383,6 +420,7 @@
   },
   {
     "id": 37,
+    "code": "ReM",
     "name": "Ms. J. Reinger",
     "requests": [
       {
@@ -394,17 +432,20 @@
   },
   {
     "id": 38,
+    "code": "WaD",
     "name": "Dr. G.E. Walter",
     "requests": []
   },
   {
     "id": 39,
+    "code": "BoC",
     "name": "C.A. Bode",
     "requests": []
   },
   {
     "id": 40,
-    "name": "Mrs. L.R. Dietrich",
+    "code": "DiL",
+    "name": "L.R. Dietrich",
     "requests": [
       {
         "type": "unavailable",
@@ -417,6 +458,7 @@
   },
   {
     "id": 41,
+    "code": "GoM",
     "name": "Miss N. Goyette",
     "requests": [
       {
@@ -430,17 +472,20 @@
   },
   {
     "id": 42,
+    "code": "BaM",
     "name": "Miss R. Bahringer",
     "requests": []
   },
   {
     "id": 43,
+    "code": "EmS",
     "name": "S. Emmerich",
     "requests": []
   },
   {
     "id": 44,
-    "name": "Mrs. T. Kerluke",
+    "code": "KeT",
+    "name": "T. Kerluke",
     "requests": [
       {
         "type": "unavailable",
@@ -451,6 +496,7 @@
   },
   {
     "id": 45,
+    "code": "KeM",
     "name": "Ms. S. Kertzmann",
     "requests": [
       {
@@ -474,12 +520,14 @@
   },
   {
     "id": 46,
-    "name": "B. Nikolaus",
+    "code": "NiH",
+    "name": "H. Nikolaus",
     "requests": []
   },
   {
     "id": 47,
-    "name": "Mrs. S. Ratke",
+    "code": "RaS",
+    "name": "S. Ratke",
     "requests": [
       {
         "type": "unavailable",
@@ -499,11 +547,13 @@
   },
   {
     "id": 48,
+    "code": "HoA",
     "name": "A. Homenick",
     "requests": []
   },
   {
     "id": 49,
+    "code": "LaV",
     "name": "V. Larson",
     "requests": [
       {
@@ -515,6 +565,7 @@
   },
   {
     "id": 50,
+    "code": "PaD",
     "name": "Dr. D. Pagac",
     "requests": [
       {
@@ -526,16 +577,19 @@
   },
   {
     "id": 51,
-    "name": "C. Cormier",
+    "code": "CoJ",
+    "name": "J. Cormier",
     "requests": []
   },
   {
     "id": 52,
-    "name": "Mrs. E. Kling",
+    "code": "KlE",
+    "name": "E. Kling",
     "requests": []
   },
   {
     "id": 53,
+    "code": "RoM",
     "name": "Miss A.J. Robel",
     "requests": [
       {
@@ -549,7 +603,8 @@
   },
   {
     "id": 54,
-    "name": "Mrs. B. Blanda",
+    "code": "BlB",
+    "name": "B. Blanda",
     "requests": [
       {
         "type": "unavailable",
@@ -569,6 +624,7 @@
   },
   {
     "id": 55,
+    "code": "ArD",
     "name": "D. Armstrong",
     "requests": [
       {
@@ -582,6 +638,7 @@
   },
   {
     "id": 56,
+    "code": "CrA",
     "name": "A. Cremin",
     "requests": [
       {
@@ -607,21 +664,25 @@
   },
   {
     "id": 57,
+    "code": "BrM",
     "name": "Mr. S. Brown",
     "requests": []
   },
   {
     "id": 58,
+    "code": "CoD",
     "name": "Dr. J. Collier",
     "requests": []
   },
   {
     "id": 59,
-    "name": "Mrs. A. Yundt",
+    "code": "YuA",
+    "name": "A. Yundt",
     "requests": []
   },
   {
     "id": 60,
+    "code": "GrA",
     "name": "A. Greenfelder",
     "requests": [
       {

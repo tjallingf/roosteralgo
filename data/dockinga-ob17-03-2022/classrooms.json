@@ -1,93 +1,93 @@
 [
   {
     "id": "DS01",
-    "fitness": [
+    "scores": [
       [{"subjects":["PED"]}, 1]
     ]
   },
   {
     "id": "DS02",
-    "fitness": [
+    "scores": [
       [{"subjects":["PED"]}, 1]
     ]
   },
   {
     "id": "DS03",
-    "fitness": [
+    "scores": [
       [{"subjects":["PED"]}, 1]
     ]
   },
   {
     "id": "E040",
-    "fitness": [
+    "scores": [
       [{"subjects":["LAT"]}, 1]
     ]
   },
   {
     "id": "E041",
-    "fitness": [
+    "scores": [
       [{"subjects":"*","year":[1,2,3]}, 0.7],
       [{"subjects":"*","year":[4,5,6]}, 0.1]
     ]
   },
   {
     "id": "E042",
-    "fitness": [
+    "scores": [
       [{"subjects":"*","year":[1,2,3]}, 0.7],
       [{"subjects":"*","year":[4,5,6]}, 0.1]
     ]
   },
   {
     "id": "E043",
-    "fitness": [
+    "scores": [
       [{"subjects":["SOC"],"year":[1,2,3]}, 1]
     ]
   },
   {
     "id": "E044",
-    "fitness": [
+    "scores": [
       [{"subjects":["ENL"],"year":[1,2,3]}, 1]
     ]
   },
   {
     "id": "E045",
-    "fitness": [
+    "scores": [
       [{"subjects":["MAT"],"year":[1,2,3]}, 1]
     ]
   },
   {
     "id": "E052",
-    "fitness": [
+    "scores": [
       [{"subjects":["ENG"]}, 1]
     ]
   },
   {
     "id": "E060",
-    "fitness": [
+    "scores": [
       [{"subjects":["MUS"]}, 1]
     ]
   },
   {
     "id": "E061",
-    "fitness": [
+    "scores": [
       [{"subjects":["ART"]}, 1]
     ]
   },
   {
     "id": "E062",
-    "fitness": [
+    "scores": [
       [{"subjects":["ART"]}, 1]
     ]
   },
   {
     "id": "E073",
-    "fitness": [
+    "scores": [
       [{"subjects":["GEL"],"year":[1,2,3]}, 1]
     ]
   },
   {
     "id": "E074",
-    "fitness": [
+    "scores": [
       [{"subjects":["DUL"],"year":[1,2,3]}, 1]
     ]
   }

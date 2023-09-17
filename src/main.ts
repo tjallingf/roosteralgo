@@ -6,13 +6,11 @@ import SubjectController from './controllers/SubjectController';
 import StudentController from './controllers/StudentController';
 import TeacherController from './controllers/TeacherController';
 import PeriodController from './controllers/PeriodController';
-import WeekAlgo from './algos/WeekAlgo';
+import MasterAlgo from './algos/MasterAlgo';
 import BatchController from './controllers/BatchController';
-import Subject from './models/entities/Subject';
-import Teacher from './models/entities/Teacher';
-import Grade from './models/Grade';
-import MaximumCardinalityAlgo from './algos/MaximumCardinalityAlgo';
-import Classroom from './models/entities/Classroom';
+import TeacherBatchAlgo from './algos/TeacherBatchAlgo';
+import Renderer from './lib/Renderer';
+import * as _ from 'lodash';
 
 (async function() {   
     // Add logger global
@@ -30,65 +28,22 @@ import Classroom from './models/entities/Classroom';
     globalThis.$students = new StudentController();
     globalThis.$batches = new BatchController();
 
-    const teacherGradeAlgo = new MaximumCardinalityAlgo();
-    const proposals = teacherGradeAlgo.solve($batches.all());
+    const teacherBatchAlgo = new TeacherBatchAlgo();
+    const proposals = teacherBatchAlgo.solve();
 
     proposals.forEach(proposal => {
-        proposal.subject.linkTo(proposal.teacher);
-        proposal.grade.linkTo(proposal.subject);
-        proposal.grade.linkTo(proposal.teacher);
+        proposal.batch.linkTo(proposal.teacher);
     })
 
-    // const students = $students.all();
-    const students = [ $students.getBy(s => s.config.name === '2_VWO') ];
+    const algo = new MasterAlgo({});
+    algo.start();
 
-    Promise.all(students.map(student => {
-        const context = {
-            student: student
-        }
-        
-        const algo = new WeekAlgo({}, context);
+    _.forIn(algo.result().schedules, schedule => {
+        const renderer = new Renderer(schedule);
 
-        return algo.start();
-    })).then(algos => {
-        algos.map(algo => {
-            const schedule = algo.result();
-
-            const json: any = {
-                id: algo.context.student.config.name,
-                meta: {
-                    periods: $periods.meta,
-                    periodDistrib: $periods.allSortedByMedianDistance().filter(p => p.config.id < 8).map(p => p.id)
-                },
-                periods: []
-            }
-
-            schedule.periods.all().forEach(period => {
-                const subject = period.getLink(Subject);
-                if(!subject) return;
-
-                // const classroom = period.getLink(Classroom);
-                // if(!classroom) {
-                //     throw new Error('No classsroom.');
-                // }
-                
-                // const grade = algo.context.student.getLink(Grade);
-                // const teacher = grade.getCombiLink(Teacher, subject);
-                // if(!teacher) {
-                //     throw new Error('No teacher.');
-                // }
-
-                // console.log(subject.id, grade.id, teacher.id)
-
-                json.periods.push({
-                    period: period.id,
-                    // classroom: classroom.id,
-                    subject: subject.id,
-                    // teacher: teacher.id
-                })
-            })
-
-            console.log(JSON.stringify(json));
-        })
+        renderer.saveHTML();
     })
+
+    // const renderer = new Renderer(algo.result());
+    // renderer.saveHTML();
 })();

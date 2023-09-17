@@ -6,7 +6,7 @@ import { glob } from 'glob';
 class InputClass {
     #data;
 
-    get(filename) {
+    get(filename: string) {
         return this.#data[filename];
     }
 

@@ -1,0 +1,101 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</script>
+    <h1 id="date">Open console and call load() function.</h1>
+    <div style="display:flex;width:100%;">
+        <div class="grid" id="prefix">
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+        <div class="grid" id="schedule">
+            
+        </div>
+    </div>
+    <div id="metadata">
+        <div class="metadata-item">
+            <b>Median period</b>: <span id="median">N/A</span>
+        </div>
+        <div class="metadata-item">
+            <b>Period distribution</b>: <span id="period-distrib">N/A</span>
+        </div>
+    </div>
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+    }
+
+    #date {
+        font-size: 1.25rem;
+        margin-bottom: 0;
+        padding: 1rem 1rem;
+    }
+
+    #prefix {
+        font-weight: bold;
+    }
+
+    #schedule {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-auto-flow: column;
+        width: 100%;
+    }
+
+    #metadata {
+        padding: 1rem;
+    }
+
+    .metadata-item {
+        padding: 0.25rem 0;
+    }
+
+    .period[data-subject="ART"] { background: #A13300; }
+    .period[data-subject="BIO"] { background: #A0006C; }
+    .period[data-subject="BUE"] { background: #D06401; }
+    .period[data-subject="DUL"] { background: #EA7041; }
+    .period[data-subject="ECO"] { background: #6D3303; }
+    .period[data-subject="ENG"] { background: #BF7700; }
+    .period[data-subject="ENL"] { background: #662D40; }
+    .period[data-subject="FRL"] { background: #B99700; }
+    .period[data-subject="GEO"] { background: #D3B227; }
+    .period[data-subject="GEL"] { background: #29516f; }
+    .period[data-subject="GRK"] { background: #AA8652; }
+    .period[data-subject="HIS"] { background: #C8843B; }
+    .period[data-subject="LAT"] { background: #3D654B; }
+    .period[data-subject="MAT"] { background: #4C745A; }
+    .period[data-subject="MAA"] { background: #809B78; }
+    .period[data-subject="MAB"] { background: #232C31; }
+    .period[data-subject="MAD"] { background: #385D77; }
+    .period[data-subject="MUS"] { background: #4C85B0; }
+    .period[data-subject="PED"] { background: #523A50; }
+    .period[data-subject="PHY"] { background: #7A4C7B; }
+    .period[data-subject="CHE"] { background: #9978B1; }
+    .period[data-subject="SOC"] { background: #EA449A; }
+
+    .grid div {
+        padding: 0.75rem 1rem;
+    }
+</style>
+<script>
+    for (let i = 0; i < 40; i++) {
+        $('#schedule').append(`<div class="period" id="period-${i}"></div>`)   
+    }
+
+    $('#date').text(new Date(DATE_TIME).toString().split('GMT+')[0])
+
+    SCHEDULE.periods.forEach(({ period, subject, teacher, classroom }) => {
+        const $period = $(`#period-${period}`);
+        $period.html(`${subject} - ${teacher} - ${classroom}`);
+        $period.attr('data-subject', subject);
+    })
+
+    $('#median').text(SCHEDULE.meta.periods.medianPeriodDayIndex);
+    $('#period-distrib').text(SCHEDULE.meta.periodDistrib.join(', '));
+</script>

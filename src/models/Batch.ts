@@ -1,21 +1,19 @@
-import Entity from './Entity';
-import Student from './entities/Student';
+import Entity, { EntityConfig } from './Entity';
 import Subject from './entities/Subject';
 
-export interface BatchConfig {
-    id: string;
+export interface BatchConfig extends EntityConfig {
     year: number;
-    level: string;
+    level: 'HAVO' | 'VWO';
+    subject: Subject
 }
 
 export default class Batch extends Entity<BatchConfig> {
-    #students = {};
-    subject: Subject;
+    constructor(config: Omit<BatchConfig, 'id'>, controller: any) {
+        const id = [config.year, config.level, config.subject.id].join('_');
+        super({ id, ...config }, controller);
+    }
 
-    constructor({ level, year, subject }) {
-        const id = [level, year, subject.id].join('_');
-        super({ id, level, year });
-
-        this.subject = subject;
+    is(year: BatchConfig['year'], level: BatchConfig['level']) {
+        return this.config.year === year && this.config.level === level;
     }
 }

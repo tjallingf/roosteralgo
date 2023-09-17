@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@types/node": "^20.3.0",
-    "dayjs": "^1.11.7",
+    "dayjs": "^1.11.9",
     "glob": "^10.2.6",
     "kolorist": "^1.8.0",
     "lodash": "^4.17.21",

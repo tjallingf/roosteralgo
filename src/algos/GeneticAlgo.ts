@@ -13,26 +13,24 @@ export type Population<AlgoEntity> = {
     fitness: number
 }[]
 
-export default abstract class GeneticAlgo<AlgoEntity extends {} = {}, AlgoContext extends {} = {}> {
+export default abstract class GeneticAlgo<AlgoEntity extends {} = {}> {
     abstract fitness(entity: AlgoEntity): number;
     abstract seed(): AlgoEntity;
     abstract selectOne(population: Population<AlgoEntity>): AlgoEntity
 
     readonly config: GeneticAlgoConfig;
-    readonly context: AlgoContext;
     #entities: AlgoEntity[] = [];
 
     #DEFAULT_CONFIG = {
-        size: 1,
+        size: 5,
         mutation: 0.5,
         crossover: 0.2,
         fittestAlwaysSurvives: true,
-        iterations: 10
+        iterations: 2
     }
 
-    constructor(config: Partial<GeneticAlgoConfig>, context: AlgoContext) {
+    constructor(config: Partial<GeneticAlgoConfig>) {
         this.config = defaults(config, this.#DEFAULT_CONFIG);
-        this.context = context;
     }
 
     async start() {

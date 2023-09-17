@@ -1,14 +1,17 @@
-import { ContextList, matchContext } from '../../utils/context';
 import EntityWithAvailability from '../EntityWithAvailability';
-import Grade from '../Grade';
+import Batch from '../Batch';
+import Context from '../../lib/Context';
+import { ContextList } from '../../lib/Context';
 
 export interface TeacherConfig {
     id: number;
-    grades: ContextList<number>
+    code: string;
+    name: string;
+    batches: ContextList<number>;
 }
 
 export default class Teacher extends EntityWithAvailability<TeacherConfig> {
-    getFitnessForGrade(grade: Grade) {
-        return matchContext(this.config.grades, grade.config) ?? 0.5;
+    getFitness(context: Context) {
+        return Math.random();
     }
 }

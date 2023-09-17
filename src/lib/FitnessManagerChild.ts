@@ -10,7 +10,7 @@ export default class FitnessManagerChild<TEntity extends Entity> {
         this.entity = entity;
     }
 
-    fatal(callback: () => unknown) {
+    require(callback: () => unknown) {
         this.break = !!callback();
         return this;
     }

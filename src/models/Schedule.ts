@@ -1,122 +1,156 @@
-import PeriodController from '../controllers/PeriodController';
-import Period from './entities/Period';
-import { WeekAlgoContext } from '../algos/WeekAlgo';
-import Entity from './Entity';
-import Subject from './entities/Subject';
-import Grade from './Grade';
-import EntityWithAvailability from './EntityWithAvailability';
-import FitnessManager from '../lib/FitnessManager';
-import Teacher from './entities/Teacher';
-import Classroom from './entities/Classroom';
-import { createContext } from '../utils/context';
+// import PeriodController from '../controllers/PeriodController';
+// import Period from './entities/Period';
+// import Entity from './Entity';
+// import Subject from './entities/Subject';
+// import Batch from './Batch';
+// import EntityWithAvailability from './EntityWithAvailability';
+// import FitnessManager from '../lib/FitnessManager';
+// import Teacher from './entities/Teacher';
+// import Classroom from './entities/Classroom';
+// import Student from './entities/Student';
 
-export default class Schedule {
-    readonly periods: PeriodController;
-    protected periodFitness: Record<string, number>;
-    protected context: WeekAlgoContext;
+// export interface ScheduleContext {
+//     student: Student,
+//     periods: PeriodController,
+//     subjects: Subject[]
+// }
 
-    constructor(context: WeekAlgoContext) {
-        this.context = context;
-        this.periods = new PeriodController();
-    }
+// export default class Schedule {
+//     readonly periods: PeriodController;
+//     readonly context: ScheduleContext;
+//     protected periodFitness: Record<string, number> = {};
 
-    getPeriod(index: number) {
-        return this.periods.get(index);
-    }
+//     constructor(context: ScheduleContext) {
+//         this.context = context;
+//         this.periods = new PeriodController();
+//     }
 
-    entityCanSatisfyPeriod(entity: Entity, period: Period) {
-        if(entity instanceof Subject) {
-            // Check if the desired number of periods for this subject has been reached
-            const context = this.context.student.getLink(Grade).config;
-            const satisfiedPeriods = this.periods.all().filter(p => p.isLinkedTo(entity));
-            if(entity.getProperty('periods', context)! < satisfiedPeriods.length) {
-                return true;
-            }
-        } else if(entity instanceof EntityWithAvailability) {
-            // Check if the entity is available
-            return entity.isAvailable(period);
-        }
+//     getPeriod(index: number) {
+//         return this.periods.get(index);
+//     }
 
-        return false;
-    }
+//     entityCanSatisfyPeriod(entity: Entity, period: Period) {
+//         if(entity instanceof Subject) {
+//             // Check if the desired number of periods for this subject has been reached
+//             const context = this.context.student.getLink(Batch).config;
+//             const occupiedPeriods = this.periods.all().filter(p => p.isLinkedTo(entity));
+//             if(entity.getProperty('periods', context)! < occupiedPeriods.length) {
+//                 return true;
+//             }
+//         } else if(entity instanceof EntityWithAvailability) {
+//             // Check if the entity is available
+//             return entity.isAvailable(period);
+//         }
 
-    getFitness(period: Period) {
-        return this.periodFitness[period.id] ?? 0.5;
-    }
+//         return false;
+//     }
 
-    seedSubject(subject: Subject) {
-        const context = createContext(this.context.student);
-        const periodCount = subject.getProperty('periods', context) ?? 0;
-        const consecutivePeriodCount = subject.config.consecutivePeriods ?? 1;
+//     getFitness(period: Period) {
+//         return this.periodFitness[period.id] ?? 0.5;
+//     }
 
-        this.periods.allSortedByMedianDistance().every(period => {  
-            const followingPeriods = period.listFor(consecutivePeriodCount - 1);
-            if(period.isEmpty() && followingPeriods.every(p => p.isEmpty())) {
-                for (let i = 0; i < consecutivePeriodCount; i++) {
-                    // Find the consecutive period, offset by i.
-                    // This also checks if the period is on the same day.
-                    const consecutivePeriod = period.getConsecutiveOrFail(i);
-                    // console.log(subject.id, i, consecutivePeriod?.id);
+//     seedSubject(subject: Subject) {
+//         const context = createContext(this.context.student);
+//         const periodCount = subject.getProperty('periods', context) ?? 0;
+//         const periodSpan = subject.config.periodSpan ?? 1;
 
-                    // If the next period does not exist or is on a different day
-                    if(!consecutivePeriod) {
-                        break;
-                    }
+//         this.periods.allSortedByMedianDistance().every(period => {  
+//             if(periodSpan === 1) {
+//                 if(period.isFree()) {
+//                     this.updatePeriod(period, subject);
+//                 }
+//             } else {
+//                 // If the subject spans more than one period
+//                 const freeSiblings = period.getFreeAdjacentSiblings(periodSpan);
+//                 if(freeSiblings.length >= periodSpan) {
+//                     freeSiblings.forEach(sibling => {
+//                         this.updatePeriod(sibling, subject);
+//                     })
+//                 }
+//             }
 
-                    this.recalculate(consecutivePeriod, subject);
-                }
-            }
-
-            // Break if the required number of periods has been reached
-            if(this.periods.all().filter(s => s.isLinkedTo(subject)).length >= periodCount) {
-                return false;
-            }
+//             // Break if the required number of periods has been reached
+//             if(this.periods.all().filter(s => s.isLinkedTo(subject)).length >= periodCount) {
+//                 return false;
+//             }
             
-            return true;
-        })
-    }
+//             return true;
+//         })
+//     }
 
-    getUnsatisfiedSubjects() {
-        const context = createContext(this.context.student);
-        let result = true;
+//     getUnsatisfiedSubjects() {
+//         const context = createContext(this.context.student);
+//         let result = true;
 
-        return $subjects.allForStudent(this.context.student).filter(subject => {
-            const requiredPeriodCount = subject.getProperty('periods', context) ?? 0;
-            const calculatedPeriodCount = subject.getLinks(Period).length;
+//         return $subjects.allForStudent(this.context.student).filter(subject => {
+//             const requiredPeriodCount = subject.getProperty('periods', context) ?? 0;
+//             const calculatedPeriodCount = subject.getLinks(Period).length;
             
-            return calculatedPeriodCount < requiredPeriodCount;
-        })
-    }
+//             return calculatedPeriodCount < requiredPeriodCount;
+//         })
+//     }
 
-    recalculate(period: Period, subject?: Subject) {
-        period.unlinkAll();
+//     updatePeriod(period: Period, subject: Subject) {
+//         period.unlinkAll();
+//         period.linkTo(subject);
+//         period.linkTo(this.context.student);
+//         const teacher = subject.getCombiLink(Teacher, this.context.student);
+//         period.linkTo(subject.getCombiLink(Teacher, this.context.student)!);
+//     }
 
-        if(!subject) {
-            subject = this.bestSubjectForPeriod(period);
-        }
+//     recompute(period: Period) {
+//         const fittest = this.fittestSubjectForPeriod(period);
 
-        period.linkTo(subject);
-    }
+//         if(!fittest) {
+//             // If no fitting subject was found.
+//             return;
+//         }
+//         const subject = fittest.entity;
+//         $logger.debug(`Updating period ${period.id} to ${subject.id}`)
 
-    bestSubjectForPeriod(period: Period) {
-        const fitnessManager = new FitnessManager<Subject>();
+//         this.updatePeriod(period, subject);
+//         this.periodFitness[period.id] = fittest.fitness;
+//     }
 
-        $subjects.allForStudent(this.context.student).forEach(subject => {
-            const teacher = this.context.student.getLink(Grade).getCombiLink(Teacher, subject)!;
-            const classroom = subject.getLink(Classroom);
-            const grade = this.context.student.getLink(Grade);
+//     classroomProposals(period: Period, teacher: Teacher, subject: Subject) {
+//         const student = this.context.student;
+//         const context = createContext(student, period, teacher, subject);
 
-            const context = createContext(teacher, this.context.student, period, classroom, subject);
+//         const adjacentPeriods = [ period.offsetOrFail(-1), period.offsetOrFail(-2), period.offsetOrFail(-3) ].filter(p => p && !p.isFree());
 
-            fitnessManager
-                .child(subject)
-                .fatal(() => this.entityCanSatisfyPeriod(subject, period))
-                .fatal(() => this.entityCanSatisfyPeriod(teacher, period))
-                .case(() => {
-                    return classroom.getFitness(context);
-                })
-        })
+//         const proposals = new FitnessManager();
+//         subject.getLinks(Classroom).forEach(classroom => {
+//             proposals.add(classroom)
+//                 .require(() => classroom.isAvailable(period))
+//                 .case(() => {
+//                     let score = 0;
 
-        return fitnessManager.best();
-    }
-}
+//                     adjacentPeriods.forEach(period => {
+//                         if(period.getLink(Classroom) === classroom) {
+//                             score+= 0.25;
+//                         }
+//                     })
+
+//                     return score;
+//                 })
+//         })
+//     }
+
+//     fittestSubjectForPeriod(period: Period) {
+//         const fitnessManager = new FitnessManager<Subject>();
+
+//         $subjects.allForStudent(this.context.student).forEach(subject => {
+//             const teacher = this.context.student.getCombiLink(Teacher, subject)!;
+//             const classrooms = this.classroomProposals(period, teacher, subject);
+//             const classroom = classrooms[0];
+
+//             const context = createContext(teacher, this.context.student, period, classroom, subject);
+//             fitnessManager.add(subject)
+//                 .require(() => this.entityCanSatisfyPeriod(subject, period))
+//                 .require(() => this.entityCanSatisfyPeriod(teacher, period))
+//                 .case(() => classroom.getFitness(context))
+//         })
+
+//         return fitnessManager.best();
+//     }
+// }

@@ -1,13 +1,13 @@
 import Entity from '../Entity';
 import Student from './Student';
 import Teacher from './Teacher';
-import { ContextList } from '../../utils/context';
+import { ContextList } from '../../lib/Context';
 
 export interface SubjectConfig {
     id: string;
     teachers: number[];
     periods: ContextList<number>;
-    consecutivePeriods?: number;
+    periodSpan?: number;
     tags?: ('CORE')[]
 }
 
@@ -43,9 +43,9 @@ export default class Subject extends Entity<SubjectConfig> {
     calcSeedingPriority() {
         let seedingPriority = 0;
 
-        // Subjects with consecutive periods
-        if(this.config.consecutivePeriods && this.config.consecutivePeriods > 1) {
-            seedingPriority += 10 * this.config.consecutivePeriods
+        // Subjects with classes that span more than one period
+        if(this.config.periodSpan && this.config.periodSpan > 1) {
+            seedingPriority += 10 * this.config.periodSpan
         } 
         
         // Subjects with various tags

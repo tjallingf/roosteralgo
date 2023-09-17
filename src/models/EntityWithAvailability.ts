@@ -3,7 +3,7 @@ import Period from './entities/Period';
 
 export default abstract class EntityWithAvailability<TConfig extends EntityConfig> extends Entity<TConfig> {
     isAvailable(period: Period) {
-        return true;
+        return !this.isLinkedTo(period);
     }
 
     setAvailability(period: Period, isAvailable: boolean) {

@@ -1,6 +1,6 @@
 [
     {
-    "id": 1,
+    "id": "1h",
     "name": "1_HAVO",
     "level": "HAVO",
     "year": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": "1v",
     "name": "1_VWO",
     "level": "VWO",
     "year": 1,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": "2h",
     "name": "2_HAVO",
     "level": "HAVO",
     "year": 2,
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "id": 15,
+    "id": "2v",
     "name": "2_VWO",
     "level": "VWO",
     "year": 2,
@@ -76,7 +76,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": "3h",
     "name": "3_HAVO",
     "level": "HAVO",
     "year": 3,
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": "3v",
     "name": "3_VWO",
     "level": "VWO",
     "year": 3,

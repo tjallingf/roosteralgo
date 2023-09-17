@@ -6,8 +6,8 @@
       35,
       36
     ],
-    "periods": 2,
-    "consecutivePeriods": 2
+    "periods": 1,
+    "periodSpan": 2
   },
   {
     "id": "BIO",
@@ -47,9 +47,9 @@
       59
     ],
     "periods": [
-      [{"year": [1,2]}, 2]
+      [{"year": [1,2]}, 1]
     ],
-    "consecutivePeriods": 2
+    "periodSpan": 2
   },
   {
     "id": "ENL",
@@ -137,9 +137,9 @@
       51
     ],
     "periods": [
-      [{"year":[1,2,3]}, 2]
+      [{"year":[1,2,3]}, 1]
     ],
-    "consecutivePeriods": 2
+    "periodSpan": 2
   },
   {
     "id": "PED",
@@ -150,9 +150,9 @@
       56
     ],
     "periods": [
-      [{"year":[1,2,3]}, 2]
+      [{"year":[1,2,3]}, 1]
     ],
-    "consecutivePeriods": 2
+    "periodSpan": 2
   },
   {
     "id": "PHY",

@@ -2,8 +2,8 @@ import ControllerClass from '../lib/ControllerClass';
 import Input from '../lib/Input';
 import Student from '../models/entities/Student';
 import Subject from '../models/entities/Subject';
-import Grade from '../models/Grade';
-import { matchContext } from '../utils/context';
+import Batch from '../models/Batch';
+import Context from '../lib/Context';
 
 export default class SubjectController extends ControllerClass<Subject>() {
     load() {
@@ -15,16 +15,15 @@ export default class SubjectController extends ControllerClass<Subject>() {
 
     // TODO: memoize
     allForStudent(student: Student) {
-        const grade = student.getLink(Grade);
-        const context = { year: grade.config.year, };
-        return this.all().filter(subject => matchContext(subject.config.periods, context)! > 0);
+        const context = new Context(student);
+        return this.all().filter(subject => context.match(subject.config.periods)! > 0);
     }
 
     // TODO: memoize
-    allForGrade(grade: Grade) {
+    allForBatch(batch: Batch) {
         const subjects: Record<string, Subject> = {}
 
-        grade.getLinks(Student).forEach(student => {
+        batch.getLinks(Student).forEach(student => {
             const subjectsForStudent = this.allForStudent(student);
             subjectsForStudent.forEach(subject => {
                 if(!subjects[subject.id]) {

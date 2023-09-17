@@ -1,4 +1,4 @@
-import { Context, matchContext } from '../utils/context';
+import Context from '../lib/Context';
 
 export interface EntityConfig {
     id?: string | number
@@ -23,6 +23,8 @@ export default abstract class Entity<TConfig extends EntityConfig = any, TContro
     init(): void {}
 
     linkTo(entity: Entity, linkIndex = 0) {
+        if(!entity) return this;
+
         const type = entity.constructor.name;
         if(!this.linkedEntities[type]) {
             this.linkedEntities[type] = {};
@@ -84,7 +86,7 @@ export default abstract class Entity<TConfig extends EntityConfig = any, TContro
     }
     
     getProperty(key: keyof TConfig, context: Context) {
-        return matchContext(this.config[key] as any, context);
+        return context.match(this.config[key] as any)
     }
 
     toJSON() {
