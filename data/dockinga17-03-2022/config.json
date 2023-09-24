@@ -1,4 +1,4 @@
 {
-    "HOURS_PER_DAY": 8,
-    "$students_PER_BATCH_MAX": 28
+    "PERIODS_PER_WEEK": 40,
+    "STUDENTS_PER_BATCH_TARGET": 26
 }

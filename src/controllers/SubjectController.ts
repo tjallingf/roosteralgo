@@ -11,12 +11,27 @@ export default class SubjectController extends ControllerClass<Subject>() {
 
         const subjects = Input.get('subjects');
         subjects.forEach(config => this._storeItem(new Subject(config, this)));
+
+        this.week.students.all().forEach(student => {
+            student.config.subjects.forEach(subjectId => {
+                // Get the subject
+                const subject = this.get(subjectId);
+
+                // Create context
+                const context = new Context(student);
+
+                // Check if the number or periods is at least 1
+                if(context.match(subject.config.periods)! >= 1) {
+                    student.linkTo(subject);
+                } else {
+                    $logger.notice(`Student ${student.id} takes a subject with 0 periods (${subject.id}).`);
+                }
+            })
+        })
     }
 
-    // TODO: memoize
     allForStudent(student: Student) {
-        const context = new Context(student);
-        return this.all().filter(subject => context.match(subject.config.periods)! > 0);
+        return student.getLinks(Subject);
     }
 
     // TODO: memoize

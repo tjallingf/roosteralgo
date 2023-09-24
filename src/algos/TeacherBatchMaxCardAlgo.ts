@@ -1,21 +1,25 @@
 import Teacher from '../models/entities/Teacher';
-import Subject from '../models/entities/Subject';
-import Batch from '../models/Batch';
-import Student from '../models/entities/Student';
+import Batch, { BatchConfig } from '../models/Batch';
 import Context from '../lib/Context';
+import BatchController from '../controllers/BatchController';
 
 export interface Proposal {
     teacher: Teacher,
     batch: Batch
 }
 
-export default class MaximumCardinalityAlgo {
+export default class TeacherBatchMaxCardAlgo {
     protected proposals: Record<string, Proposal>;
+    protected batches: BatchController;
+
+    constructor(batches: BatchController) {
+        this.batches = batches;
+    }
 
     solve() {
         const proposals: Proposal[] = [];
 
-        $batches.all().forEach(batch => {
+        this.batches.all().forEach(batch => {
             // Create a new context for the batch
             const context = new Context(batch);
 

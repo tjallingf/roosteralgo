@@ -1,4 +1,5 @@
 import Context from '../lib/Context';
+import _ from 'lodash';
 
 export interface EntityConfig {
     id?: string | number
@@ -22,7 +23,7 @@ export default abstract class Entity<TConfig extends EntityConfig = any, TContro
     
     init(): void {}
 
-    linkTo(entity: Entity, linkIndex = 0) {
+    linkTo(entity: Entity, initial = true) {
         if(!entity) return this;
 
         const type = entity.constructor.name;
@@ -32,19 +33,24 @@ export default abstract class Entity<TConfig extends EntityConfig = any, TContro
 
         this.linkedEntities[type][entity.id] = entity;
 
-        if(linkIndex < 1) {
-            entity.linkTo(this, linkIndex+1);
+        if(initial) {
+            entity.linkTo(this, false);
         }
 
         return this;
     }
 
     unlinkAll() {
-        this.linkedEntities = {};
+        _.forIn(this.linkedEntities, entities => {
+            _.forOwn(entities, entity => {
+                this.unlinkFrom(entity);
+            })
+        })
+
         return this;
     }
 
-    unlinkFrom(entity: Entity, linkIndex = 0) {
+    unlinkFrom(entity: Entity, initial = true) {
         if(!entity) return;
         
         const type = entity.constructor.name;
@@ -52,8 +58,8 @@ export default abstract class Entity<TConfig extends EntityConfig = any, TContro
             delete this.linkedEntities[type][entity.id];
         }
 
-        if(linkIndex < 1) {
-            entity.unlinkFrom(this, linkIndex+1)
+        if(initial) {
+            entity.unlinkFrom(this, false)
         }
 
         return this;

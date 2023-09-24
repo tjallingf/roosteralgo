@@ -1,3 +1,4 @@
+import Week from '../Week';
 import ControllerClass from '../lib/ControllerClass';
 import Period from '../models/entities/Period';
 
@@ -7,8 +8,8 @@ export default class PeriodController extends ControllerClass<Period>() {
         medianPeriodDayIndex: number;
     }
 
-    constructor() {
-        super();
+    constructor(week: Week) {
+        super(week);
         
         const periodCountPerDay = Math.round(this.all().length / 5);
 

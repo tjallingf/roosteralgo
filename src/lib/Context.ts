@@ -5,6 +5,7 @@ import type Teacher from '../models/entities/Teacher';
 import type Subject from '../models/entities/Subject';
 import { forIn } from 'lodash';
 import Entity from '../models/Entity';
+import Grade from '../models/entities/Grade';
 import Batch from '../models/Batch';
 
 export type ContextCondition = Record<string, string | number | (string | number)[]>;
@@ -14,16 +15,16 @@ export type ContextList<TValue> = ContextItem<TValue>[];
 export interface ContextData {
     classroom: Classroom,
     period: Period,
-    student: Student,
     subject: Subject,
     teacher: Teacher,
-    batch: Batch
+    grade: Grade,
+    batch: Batch,
+    student: Student
 }
 
 export interface SerializedContextData {
     classroom: string,
     period: string,
-    student: string,
     subject: string,
     teacher: string,
     level: string,
@@ -31,8 +32,9 @@ export interface SerializedContextData {
 }
 
 export default class Context {
-    get batch() { return this.data.batch; }
     get student() { return this.data.student; }
+    get batch() { return this.data.batch; }
+    get grade() { return this.data.grade; }
     get teacher() { return this.data.teacher; }
     get classroom() { return this.data.classroom; }
     get period() { return this.data.period; }
@@ -41,15 +43,30 @@ export default class Context {
     data: ContextData = {} as ContextData;
 
     constructor(...entities: Entity[]) {
+        this.update(...entities);
+
+        if(!this.data.grade && this.data.student) {
+            this.data.grade = this.student.getLink(Grade);
+        }
+
+        if(!this.data.subject && this.data.student && this.data.subject) {
+            this.data.batch = this.student.getBatch(this.data.subject);
+        }
+    }
+
+    update(...entities: Entity[]) {
         entities.forEach(entity => {
-            this.update(entity);
+            if (!entity?.constructor?.name) return;
+            const type = entity.constructor.name.toLowerCase();
+            this.data[type] = entity;
         })
     }
 
-    update(entity: Entity) {
-        if (!entity?.constructor?.name) return;
-        const type = entity.constructor.name.toLowerCase();
-        this.data[type] = entity;
+    merge(...entities: Entity[]) {
+        const copy = new Context();
+        copy.data = this.data;
+        copy.update(...entities);
+        return copy;
     }
 
     match<TValue = number>(list: ContextList<TValue>): TValue | null {
@@ -94,10 +111,11 @@ export default class Context {
     }
 
     serialize(): SerializedContextData {
+        const config = this.data.student?.config ?? this.data.grade?.config ?? this.data.batch?.config?.grade?.config;
+
         return {
-            year: this.data.student?.config?.year,
-            level: this.data.student?.config.level,
-            student: this.data.student?.id,
+            year: config?.year,
+            level: config?.level,
             teacher: this.data.teacher?.id,
             subject: this.data.subject?.id,
             classroom: this.data.classroom?.id,

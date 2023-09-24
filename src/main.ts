@@ -8,9 +8,10 @@ import TeacherController from './controllers/TeacherController';
 import PeriodController from './controllers/PeriodController';
 import MasterAlgo from './algos/MasterAlgo';
 import BatchController from './controllers/BatchController';
-import TeacherBatchAlgo from './algos/TeacherBatchAlgo';
+import TeacherBatchAlgo from './algos/TeacherBatchMaxCardAlgo';
 import Renderer from './lib/Renderer';
 import * as _ from 'lodash';
+import GradeController from './controllers/GradeController';
 
 (async function() {   
     // Add logger global
@@ -18,31 +19,21 @@ import * as _ from 'lodash';
     globalThis.$config = Config;
 
     // Load dataset
-    await Input.loadDataset('dockinga-ob17-03-2022');
-
-    // Setup entities global
-    globalThis.$periods = new PeriodController();
-    globalThis.$teachers = new TeacherController();
-    globalThis.$subjects = new SubjectController();
-    globalThis.$classrooms = new ClassroomController();
-    globalThis.$students = new StudentController();
-    globalThis.$batches = new BatchController();
-
-    const teacherBatchAlgo = new TeacherBatchAlgo();
-    const proposals = teacherBatchAlgo.solve();
-
-    proposals.forEach(proposal => {
-        proposal.batch.linkTo(proposal.teacher);
-    })
+    await Input.loadDataset('dockinga17-03-2022');
 
     const algo = new MasterAlgo({});
     algo.start();
 
-    _.forIn(algo.result().schedules, schedule => {
-        const renderer = new Renderer(schedule);
-
+    const result = algo.result();
+    result.students.all().forEach(student => {
+        const renderer = new Renderer(result, student);
         renderer.saveHTML();
     })
+
+    // result.teachers.all().forEach(teacher => {
+    //     const renderer = new Renderer(result, teacher);
+    //     renderer.saveHTML();
+    // })
 
     // const renderer = new Renderer(algo.result());
     // renderer.saveHTML();

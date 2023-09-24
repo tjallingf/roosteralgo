@@ -8,6 +8,7 @@ export interface SubjectConfig {
     teachers: number[];
     periods: ContextList<number>;
     periodSpan?: number;
+    name: string;
     tags?: ('CORE')[]
 }
 
@@ -19,7 +20,7 @@ export default class Subject extends Entity<SubjectConfig> {
     init() {
         if(this.config.teachers?.length) {
             this.config.teachers.forEach(id => {
-                const teacher = $teachers.get(id);
+                const teacher = this.controller.week.teachers.get(id);
                 this.linkTo(teacher);
             })
         }

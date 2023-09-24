@@ -2,6 +2,7 @@ import { EntityConfig } from '../Entity';
 import Subject from './Subject';
 import Config from '../../lib/Config';
 import EntityWithAvailability from '../EntityWithAvailability';
+import type PeriodController from '../../controllers/PeriodController';
 
 export interface PeriodConfig extends EntityConfig {
     id: number
@@ -10,17 +11,17 @@ export interface PeriodConfig extends EntityConfig {
 /**
  * Direct sibling: a period adjacent to another period, on the same day
  */
-export default class Period extends EntityWithAvailability<PeriodConfig> {
+export default class Period extends EntityWithAvailability<PeriodConfig, PeriodController> {
     day() {
-        const periodsPerDay =  Config.get('NUMBER_OF_PERIODS_PER_WEEK') / 5;
+        const periodsPerDay =  Config.get('PERIODS_PER_WEEK') / 5;
         return Math.floor(this.config.id / periodsPerDay);
     }
     
-    offset(offset = 1): Period {
+    offset(offset = 1) {
         return this.controller.get(this.config.id + offset);
     }
 
-    offsetOrFail(offset = 1): Period {
+    offsetOrFail(offset = 1) {
         return this.controller.getOrFail(this.config.id + offset);
     }
 

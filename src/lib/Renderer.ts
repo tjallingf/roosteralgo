@@ -1,51 +1,64 @@
 import * as path from 'node:path';
 import * as fs from 'node:fs';
-import Schedule from '../Schedule';
+import Week from '../Week';
 import Subject from '../models/entities/Subject';
 import Teacher from '../models/entities/Teacher';
 import Classroom from '../models/entities/Classroom';
 import dayjs from 'dayjs';
+import PeriodController from '../controllers/PeriodController';
+import Student from '../models/entities/Student';
+import Batch from '../models/Batch';
 
 const OUT_DIR = path.resolve('./renders');
 const TEMPLATE_PATH = path.resolve('./src/renderer/template.html');
 const TEMPLATE_HTML = fs.readFileSync(TEMPLATE_PATH);
 
 export default class Renderer {
-    schedule: Schedule;
+    week: Week;
+    person: Student | Teacher;
 
-    constructor(schedule: Schedule) {
-        this.schedule = schedule;
+    constructor(week: Week, person: Student | Teacher) {
+        this.week = week;
+        this.person = person;
     }
 
     getJSON() {
+        const batches = this.person.getLinks(Batch);
         const json: any = {
-            id: this.schedule.student.config.name,
+            id: this.person.id,
             meta: {
-                periods: $periods.meta,
-                periodDistrib: $periods.allSortedByMedianDistance().filter(p => p.config.id < 8).map(p => p.id)
+                periods: 40,
+                periodDistrib: [],
+                // periods: this.week.schedules[0].periods.meta,
+                // periodDistrib: this.week.periods.allSortedByMedianDistance().filter(p => p.config.id < 8).map(p => p.id)
             },
             periods: []
         }
+        
+        batches.forEach(batch => {
+            const schedule = this.week.schedules[batch.id];
+            const periods = schedule.periods.all().filter(p => batch.isLinkedTo(p));
 
-        this.schedule.periods.all().forEach(period => {
-            const subject = period.getLink(Subject);
-            if(!subject) return;
+            periods.forEach(period => {
+                const subject = period.getLink(Subject);
+                if(!subject) return;
 
-            const classroom = period.getLink(Classroom);
-            if(!classroom) {
-                throw new Error('No classsroom.');
-            }
-            
-            const teacher = period.getLink(Teacher);
-            if(!teacher) {
-                throw new Error('No teacher.');
-            }
+                const classroom = period.getLink(Classroom);
+                if(!classroom) {
+                    throw new Error('No classsroom.');
+                }
 
-            json.periods.push({
-                period: period.id,
-                // classroom: classroom.id,
-                subject: subject.id,
-                // teacher: teacher.config.code
+                const teacher = batch.getLink(Teacher);
+                if(!teacher) {
+                    throw new Error('No teacher.');
+                }
+
+                json.periods.push({
+                    period: period.id,
+                    classroom: classroom.id,
+                    subject: subject.id,
+                    teacher: teacher.config.code
+                })
             })
         })
 
@@ -62,9 +75,11 @@ export default class Renderer {
 
     saveHTML() {
         const collectionId = dayjs(new Date()).format('DD-MM-YYYY HH-mm-ss');
+        const category = this.person.constructor.name.toLowerCase()+'s';
+
         const outDirs = [
-            path.join(OUT_DIR, collectionId, 'students'),
-            path.join(OUT_DIR, 'latest', 'students')
+            path.join(OUT_DIR, collectionId, category),
+            path.join(OUT_DIR, 'latest', category)
         ];
 
         outDirs.forEach(outDir => {
@@ -72,7 +87,7 @@ export default class Renderer {
                 fs.mkdirSync(outDir, { recursive: true });
             }
 
-            const outFilename = `${this.schedule.student.id}.html`;
+            const outFilename = `${this.person.id}.html`;
             const outPath = path.resolve(outDir, outFilename);
             
             fs.writeFileSync(outPath, this.getHTML());

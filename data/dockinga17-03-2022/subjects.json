@@ -1,174 +1,265 @@
 [
   {
     "id": "ART",
+    "name": "Beeldende vorming",
     "teachers": [
       34,
       35,
-      36,
-      37
-    ]
+      36
+    ],
+    "periods": 1,
+    "periodSpan": 2
   },
   {
     "id": "BIO",
+    "name": "Biologie",
     "teachers": [
       38,
       39,
-      40,
-      41
-    ]
-  },
-  {
-    "id": "BUE",
-    "teachers": [
-      61
+      40
+    ],
+    "periods": [
+      [{"year": [1,2]}, 2],
+      [{"year":[4,5,6]}, 3]
     ]
   },
   {
     "id": "DUL",
+    "name": "Nederlands",
     "teachers": [
       7,
       8,
-      9,
-      10,
-      11,
-      12
+      9
+    ],
+    "periods": [
+      [{"year": "*"}, 3]
+    ],
+    "tags": ["CORE"]
+  },
+  {
+    "id": "BUE",
+    "name": "Bedrijfseconomie",
+    "teachers": [
+      31
+    ],
+    "periods": [
+      [{"year": [4,5,6]}, 3]
     ]
   },
   {
     "id": "ECO",
+    "name": "Economie",
     "teachers": [
       30,
-      31,
-      32,
-      33
+      31
+    ],
+    "periods": [
+      [{"year": 3}, 2],
+      [{"year": [4,5,6]}, 3]
     ]
   },
   {
     "id": "ENG",
+    "name": "Techniek",
     "teachers": [
       59
-    ]
+    ],
+    "periods": [
+      [{"year": [1,2]}, 1]
+    ],
+    "periodSpan": 2
   },
   {
     "id": "ENL",
+    "name": "Engelse taal",
     "teachers": [
       0,
       1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ]
+      2
+    ],
+    "periods": [
+      [{"year": "*"}, 3]
+    ],
+    "tags": ["CORE"]
   },
   {
     "id": "FRL",
+    "name": "Franse taal",
     "teachers": [
       20,
-      21,
-      22,
-      23
+      21
+    ],
+    "periods": [
+      [{"year": "*"}, 3]
     ]
   },
   {
     "id": "GEO",
+    "name": "Aardrijkskunde",
     "teachers": [
       24,
-      25,
-      26
+      25
+    ],
+    "periods": [
+      [{"year": 1}, 2],
+      [{"year": [2,3,4,5,6]}, 3]
     ]
   },
   {
     "id": "GEL",
+    "name": "Duitse taal",
     "teachers": [
       48,
       49
+    ],
+    "periods": [
+      [{"year": 2}, 2],
+      [{"year": [3,4,5,6]}, 3]
     ]
   },
   {
     "id": "GRK",
+    "name": "Griekse taal",
     "teachers": [
       29
+    ],
+    "periods": [
+      [{"year":[1,2,3,4]}, 3],
+      [{"year":[5,6]}, 4]
     ]
   },
   {
     "id": "HIS",
+    "name": "Geschiedenis",
     "teachers": [
       42,
-      43,
-      44
+      43
+    ],
+    "periods": [
+      [{"year": [1,2,3]}, 2],
+      [{"year": [4,5,6]}, 3]
     ]
   },
   {
     "id": "LAT",
+    "name": "Latijnse taal",
     "teachers": [
       27,
       28
+    ],
+    "periods": [
+      [{"year":[1,2,3,4]}, 3],
+      [{"year":[5,6]}, 4]
     ]
   },
   {
     "id": "MAT",
+    "name": "Wiskunde",
     "teachers": [
       13,
       14
-    ]
+    ],
+    "periods": [
+      [{"year": [1,2,3]}, 3]
+    ],
+    "tags": ["CORE"]
   },
   {
     "id": "MAA",
+    "name": "Wiskunde A",
     "teachers": [
       15,
       16
-    ]
+    ],
+    "periods": [
+      [{"year": [4,5,6]}, 3]
+    ],
+    "tags": ["CORE"]
   },
   {
     "id": "MAB",
+    "name": "Wiskunde B",
     "teachers": [
-      45,
-      46,
-      47
-    ]
+      15,
+      16
+    ],
+    "periods": [
+      [{"year": 4}, 3],
+      [{"year": [5,6]}, 4]
+    ],
+    "tags": ["CORE"]
   },
   {
     "id": "MAD",
+    "name": "Wiskunde D",
     "teachers": [
-      52
-    ]
+      16
+    ],
+    "periods": [
+      [{"year": [4,5]}, 3],
+      [{"year": 6}, 4]
+    ],
+    "tags": ["CORE"]
   },
   {
     "id": "MUS",
+    "name": "Muziek",
     "teachers": [
       50,
       51
-    ]
+    ],
+    "periods": [
+      [{"year":"*"}, 1]
+    ],
+    "periodSpan": 2
   },
   {
-    "id": "PED",
+    "id": "GYM",
+    "name": "Lichamelijke opvoeding",
     "teachers": [
       53,
       54,
       55,
       56
-    ]
+    ],
+    "periods": [
+      [{"year":[1,2,3,4,5,6]}, 1]
+    ],
+    "periodSpan": 2
   },
   {
     "id": "PHY",
+    "name": "Natuurkunde",
     "teachers": [
       17,
-      18,
-      19
+      18
+    ],
+    "periods": [
+      [{"year":[1,2,3]}, 2],
+      [{"year":[4,5,6]}, 3]
     ]
   },
   {
-    "id": "SCI",
+    "id": "CHE",
+    "name": "Scheikunde",
     "teachers": [
       57,
       58
+    ],
+    "periods": [
+      [{"year":3}, 2],
+      [{"year":[4,5,6]}, 2]
     ]
   },
   {
     "id": "SOC",
+    "name": "Godsdienstfilosofie",
     "teachers": [
       60
+    ],
+    "periods": [
+      [{"year":[1,2,3,4]}, 2],
+      [{"year":5,"level":"VWO"}, 2]
     ]
   }
 ]

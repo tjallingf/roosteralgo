@@ -1,10 +1,13 @@
+import Week from '../Week';
 import Entity from '../models/Entity';
 
 export default function ControllerClass<TEntity extends Entity>() {
     return class ControllerClass {
         _items: Record<string | number, TEntity | never> = {};
+        week: Week;
 
-        constructor() {
+        constructor(week: Week) {
+            this.week = week;
             this.load();
         }
 

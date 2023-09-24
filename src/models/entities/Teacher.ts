@@ -1,7 +1,7 @@
 import EntityWithAvailability from '../EntityWithAvailability';
-import Batch from '../Batch';
 import Context from '../../lib/Context';
 import { ContextList } from '../../lib/Context';
+import type TeacherController from '../../controllers/TeacherController';
 
 export interface TeacherConfig {
     id: number;
@@ -10,7 +10,7 @@ export interface TeacherConfig {
     batches: ContextList<number>;
 }
 
-export default class Teacher extends EntityWithAvailability<TeacherConfig> {
+export default class Teacher extends EntityWithAvailability<TeacherConfig, TeacherController> {
     getFitness(context: Context) {
         return Math.random();
     }
