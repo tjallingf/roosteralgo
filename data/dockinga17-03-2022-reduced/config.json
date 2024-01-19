@@ -1,0 +1,6 @@
+{
+    "periodsPerWeek": 45,
+    "studentsPerBatchTarget": 29,
+    "meetingsPerWeekWithRandomPeriod": 15,
+    "onderbouwStudentsOnly": true
+}

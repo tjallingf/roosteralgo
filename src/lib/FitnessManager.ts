@@ -1,21 +1,44 @@
-import FitnessManagerChild from './FitnessManagerChild';
-import Entity from '../models/Entity';
+import _ from 'lodash';
 
-export default class FitnessManager<TEntity extends Entity> {
-    children: Record<string, FitnessManagerChild<TEntity>> = {};
+export default class FitnessManager {
+    protected constraints: Record<string, boolean> = {};
+    protected scores: Record<string, number> = {};
 
-    add(entity: TEntity) {
-        if(this.children[entity.id]) {
-            throw new Error(`FitnessManagerChild with id '${entity.id}' already exists.`)
-        }
-
-        this.children[entity.id] = new FitnessManagerChild<TEntity>(entity);
-        return this.children[entity.id];
+    addHardConstraint(id: string, initialValue: number) {
+        return this.addConstraint(id, initialValue, true);
     }
 
-    best(): FitnessManagerChild<TEntity> | undefined {
-        return Object.values(this.children)
-            .filter(child => !child.break)
-            .sort((a, b) => a.fitness > b.fitness ? 1 : -1)[0];
+    addSoftConstraint(id: string, initialValue: number) {
+        return this.addConstraint(id, initialValue, false);
+    }
+
+    addConstraint(id: string, initialValue: number, isHard: boolean = false) {
+        this.constraints[id] = isHard;
+        this.scores[id] = initialValue;
+        return this;
+    }
+
+    set(id: string, value: number) {
+        if(typeof this.constraints[id] !== 'boolean') throw new Error(`Invalid field: '${id}'.`);
+        this.scores[id] = value;
+    }
+
+    getFloat() {
+        let totalScore = 0;
+        let totalWeight = 0;
+
+        _.forOwn(this.scores, (score, id) => {
+            const isHard = this.constraints[id];
+            const weight = isHard ? 10 : 1;
+
+            totalWeight += weight;
+            totalScore  += score * weight;
+        })
+
+        return totalScore / totalWeight;
+    }
+
+    getScores() {
+        return this.scores;
     }
 }

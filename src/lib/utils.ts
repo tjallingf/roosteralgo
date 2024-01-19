@@ -1,3 +1,12 @@
+export const xor = (a: any, b: any) => {
+    return (a && !b) || (!a && b);
+}
+
+// Supports negative numbers as well
+export const mod = (n: number, m: number) => {
+  return ((n % m) + m) % m;
+}
+
 export const weightedAverage = (...sets: [number, number][]) => {
     const [weightSum, valueSum] = sets.reduce(([ weightAcc, valueAcc ], [ weight, value ]) => {
         weightAcc += weight;

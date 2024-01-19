@@ -1,43 +1,28 @@
 import Subject from '../models/entities/Subject';
-import ControllerClass from '../lib/ControllerClass';
-import Batch from '../models/Batch';
+import ControllerClass from '../lib/ControllerFactory';
+import Batch from '../models/entities/Batch';
 import Student from '../models/entities/Student';
-import Grade from '../models/entities/Grade';
+import Grade from '../models/Grade';
 import _ from 'lodash';
-import Week from '../Week';
 
 export default class BatchController extends ControllerClass<Batch>() {
     load() {
-        // For storing the total number of students in each grade
-        const studentsByGrade: Record<string, Student[]> = {};
-
-        this.week.students.all().forEach(student =>{
-            const gradeId = student.getGradeId();
-            studentsByGrade[gradeId] ??= [];
-            studentsByGrade[gradeId].push(student);
-        })
-
-        this.week.subjects.all().forEach(subject => {
-            // Loop all students per grade
-            _.forOwn(studentsByGrade, allStudents => {
+        $grades.all().forEach(grade => {
+            $subjects.all().forEach(subject => {
                 // Find students that take the given subject
-                const students = allStudents.filter(s => s.isLinkedTo(subject));
-                
+                const students = grade.getStudents().filter(stu => stu.takesSubject(subject));
+
                 // Skip if no students matched
-                if(!students.length) return;
+                if (!students.length) return;
 
                 // Calculate the number of students per batch
-                const batchCount = Math.ceil(students.length / $config.get('STUDENTS_PER_BATCH_TARGET'));
+                const batchCount = Math.ceil(students.length / $config.get('studentsPerBatchTarget'));
                 const studentsPerBatchCount = Math.ceil(students.length / batchCount);
-                
-                // Get year and level of the batch number
-                const grade = students[0].getLink(Grade);
 
-                // For storing the current 
                 let batchNumber = 0;
 
                 // Place all students in a batch
-                while(students.length > 0) {
+                while (students.length > 0) {
                     // Create a new batch
                     const batch = new Batch({
                         grade: grade,
@@ -51,13 +36,14 @@ export default class BatchController extends ControllerClass<Batch>() {
                         batch.linkTo(student);
                     })
 
+                    $logger.info(`Created batch ${batch.id} with ${batch.getStudents().length} students.`);
+
                     // Store the batch
-                    this._storeItem(batch);
+                    this.store(batch);
                     batchNumber++;
                 }
-            })
 
-            $logger.info(`Built ${this.all().filter(b => b.config.subject === subject).length} batches for ${subject.id}.`);
+            })
         })
 
         $logger.info(`Built ${this.all().length} batches in total.`)

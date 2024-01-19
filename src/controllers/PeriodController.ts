@@ -1,47 +1,27 @@
-import Week from '../Week';
-import ControllerClass from '../lib/ControllerClass';
+import _ from 'lodash';
+import Schedule from '../Schedule';
+import ControllerClass from '../lib/ControllerFactory';
 import Period from '../models/entities/Period';
+import Config from '../lib/Config';
+import { mod } from '../lib/utils';
 
 export default class PeriodController extends ControllerClass<Period>() {
-    readonly meta: {
-        periodCountPerDay: number;
-        medianPeriodDayIndex: number;
-    }
-
-    constructor(week: Week) {
-        super(week);
-        
-        const periodCountPerDay = Math.round(this.all().length / 5);
-
-        // The median period sits around one-third of the day
-        const medianPeriodDayIndex = Math.round(periodCountPerDay / 3);
-        this.meta = { periodCountPerDay, medianPeriodDayIndex };
-    }
-
-    // Get the distance between the median period and the given period.
-    getDistanceFromMedian(period: Period) {
-        const dayIndex = Math.round(period.config.id % this.meta.periodCountPerDay);
-
-        // Prefer periods before the median over periods after the median
-        const modifier = dayIndex <= this.meta.medianPeriodDayIndex ? 0 : this.meta.medianPeriodDayIndex;
-
-        return Math.abs(dayIndex - this.meta.medianPeriodDayIndex) + modifier;
-    }
-
     load() {      
-        for (let i = 0; i < $config.get('PERIODS_PER_WEEK'); i++) {
-            this._storeItem(new Period({ id: i }, this));
+        for (let i = 0; i < $config.get('periodsPerWeek'); i++) {
+            this.store(new Period({ id: i }, this));
         }
     }
 
-    getByIndex(index = 0) {
-        const safeIndex = index % $config.get('PERIODS_PER_WEEK');
-        return this.getBy(p => p.config.id === safeIndex);
+    allSorted() {
+        return this.allSortedShuffled(0);
     }
 
-    // TODO: memoize
-    allSortedByMedianDistance() {
-        // Sort ascending
-        return this.all().sort((a, b) => this.getDistanceFromMedian(a) < this.getDistanceFromMedian(b) ? -1 : 1);
+    allSortedShuffled(distance = 0) {
+        return _.sortBy(this.all(), p => p.getDistanceFromMedian() + Math.random()*distance/2);
+    }
+
+    getSafe(id = 0) {
+        const safeId = mod(id, Config.get('periodsPerWeek'));
+        return this.get(safeId);
     }
 }

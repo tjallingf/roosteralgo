@@ -2,31 +2,43 @@ import Entity from '../Entity';
 import Student from './Student';
 import Teacher from './Teacher';
 import { ContextList } from '../../lib/Context';
+import SubjectController from '../../controllers/SubjectController';
+
+export type SubjectTag = 'CORE_SUBJECT' | 'BLOCK_MEETINGS';
 
 export interface SubjectConfig {
     id: string;
     teachers: number[];
     periods: ContextList<number>;
-    periodSpan?: number;
     name: string;
-    tags?: ('CORE')[]
+    tags?: SubjectTag[]
 }
 
-export default class Subject extends Entity<SubjectConfig> {
-    #students = {};
-    #teachers = {};
+export default class Subject extends Entity<SubjectConfig, SubjectController> {
     seedingPriority: number;
+    numericId: number;
+    bitmask: number;
 
-    init() {
+    __init() {
         if(this.config.teachers?.length) {
             this.config.teachers.forEach(id => {
-                const teacher = this.controller.week.teachers.get(id);
+                const teacher = $teachers.get(id);
                 this.linkTo(teacher);
             })
         }
 
+        this.numericId = this.calcNumericId();
+        this.bitmask = this.calcBitmask();
         this.seedingPriority = this.calcSeedingPriority();
-        $logger.debug(`Created subject '${this.id}' (seeding=${this.seedingPriority}).`);
+        // $logger.debug(`Created subject '${this.id}' (seeding=${this.seedingPriority}).`);
+    }
+
+    calcNumericId() {
+        return Object.values(this.controller._items).length;
+    }
+
+    calcBitmask() {
+        return Math.pow(2, this.numericId);
     }
 
     hasStudent(student: Student) {
@@ -41,21 +53,25 @@ export default class Subject extends Entity<SubjectConfig> {
         return this.getLinks(Teacher);
     }
 
-    calcSeedingPriority() {
+    hasTag(tag: SubjectTag) {
+        return !!(this.config.tags?.includes(tag));
+    }
+
+    needsBlockMeetings() {
+        return this.hasTag('BLOCK_MEETINGS');
+    }
+
+    isCoreSubject() {
+        return this.hasTag('CORE_SUBJECT');
+    }
+
+    protected calcSeedingPriority() {
         let seedingPriority = 0;
 
-        // Subjects with classes that span more than one period
-        if(this.config.periodSpan && this.config.periodSpan > 1) {
-            seedingPriority += 10 * this.config.periodSpan
+        // Subject that requires all periods to be adjacent
+        if(this.hasTag('BLOCK_MEETINGS')) {
+            seedingPriority += 10;
         } 
-        
-        // Subjects with various tags
-        if(this.config.tags && this.config.tags.length) {
-            // Subjects that are a KERNVAK
-            if(this.config.tags.includes('CORE')) {
-                seedingPriority += 5;
-            }
-        }
 
         return seedingPriority;
     }
