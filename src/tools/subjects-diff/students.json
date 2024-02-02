@@ -1,0 +1,931 @@
+[
+    {
+        "id": 173,
+        "config": {
+            "id": 173,
+            "name": "Thora Jakubowski",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "MATH_B",
+                "MATH_D",
+                "MUSIC",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3675715,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 187,
+        "config": {
+            "id": 187,
+            "name": "Wilber Kennedy MacGyver",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "MATH_D",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3682913,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 537,
+        "config": {
+            "id": 537,
+            "name": "Cedrick Johnston",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "LATIN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3692104,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 614,
+        "config": {
+            "id": 614,
+            "name": "Maxie \r\nWunsch",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "LATIN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3692104,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 620,
+        "config": {
+            "id": 620,
+            "name": "Raven Fisher",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "LATIN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3692104,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 623,
+        "config": {
+            "id": 623,
+            "name": "Kathlyn Gislason",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "LATIN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3692136,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 385,
+        "config": {
+            "id": 385,
+            "name": "Murphy Torphy",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "MUSIC",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3699266,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 598,
+        "config": {
+            "id": 598,
+            "name": "Mattie Bosco",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "MUSIC",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3699266,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 203,
+        "config": {
+            "id": 203,
+            "name": "Gerhard Conroy",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3699296,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 227,
+        "config": {
+            "id": 227,
+            "name": "Berneice Torp",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3699296,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 549,
+        "config": {
+            "id": 549,
+            "name": "Lauretta Krajcik",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3699296,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 71,
+        "config": {
+            "id": 71,
+            "name": "Heaven Weimann",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "ART",
+                "BIOLOGY",
+                "DUTCH",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_A",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3699344,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 72,
+        "config": {
+            "id": 72,
+            "name": "Macie Marlowe Mann",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3700288,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 226,
+        "config": {
+            "id": 226,
+            "name": "Carlee Kunze",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3700288,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 317,
+        "config": {
+            "id": 317,
+            "name": "Granville Noah Quitzon",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3700288,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 497,
+        "config": {
+            "id": 497,
+            "name": "Pietro London Johns",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3700288,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 637,
+        "config": {
+            "id": 637,
+            "name": "Ubaldo Schmitt",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GERMAN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3700288,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 254,
+        "config": {
+            "id": 254,
+            "name": "Alena Stiedemann",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ENGLISH",
+                "FRENCH",
+                "MATH_B",
+                "MATH_D",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3707489,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 255,
+        "config": {
+            "id": 255,
+            "name": "Harmon Rogahn",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "FRENCH",
+                "MATH_B",
+                "MATH_D",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3708481,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 333,
+        "config": {
+            "id": 333,
+            "name": "Deshawn Brown",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "ART",
+                "BIOLOGY",
+                "DUTCH",
+                "ENGLISH",
+                "FRENCH",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3723856,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 29,
+        "config": {
+            "id": 29,
+            "name": "Zack Bogan",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "FRENCH",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3724864,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 548,
+        "config": {
+            "id": 548,
+            "name": "Abelardo Spinka",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "FRENCH",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3724864,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 390,
+        "config": {
+            "id": 390,
+            "name": "Lionel Von",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GEOGRAPHY",
+                "GERMAN",
+                "MATH_A",
+                "PE",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3761792,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 80,
+        "config": {
+            "id": 80,
+            "name": "Roxane Marlowe Bosco",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ENGLISH",
+                "FRENCH",
+                "GEOGRAPHY",
+                "MATH_A",
+                "PE",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3785376,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 479,
+        "config": {
+            "id": 479,
+            "name": "Lamont Borer",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "ART",
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "HISTORY",
+                "LATIN",
+                "MATH_B",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3802232,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 220,
+        "config": {
+            "id": 220,
+            "name": "Gerda Arden Bode",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GERMAN",
+                "HISTORY",
+                "MATH_A",
+                "MUSIC",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3810466,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 399,
+        "config": {
+            "id": 399,
+            "name": "Sam Glover",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "ART",
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GERMAN",
+                "HISTORY",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3810480,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 163,
+        "config": {
+            "id": 163,
+            "name": "Amelia Beier",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GERMAN",
+                "HISTORY",
+                "MATH_B",
+                "MUSIC",
+                "MUSIC",
+                "PE",
+                "PHYSICS"
+            ]
+        },
+        "curriculumHash": 3814500,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 221,
+        "config": {
+            "id": 221,
+            "name": "Ryann London Cremin",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "HISTORY",
+                "LATIN",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3823176,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 124,
+        "config": {
+            "id": 124,
+            "name": "Annetta Marlowe Heaney",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "FRENCH",
+                "HISTORY",
+                "MATH_A",
+                "MUSIC",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3835042,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 464,
+        "config": {
+            "id": 464,
+            "name": "Antonette Paucek",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "ART",
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "FRENCH",
+                "HISTORY",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3835056,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 494,
+        "config": {
+            "id": 494,
+            "name": "Monroe Harvey",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "ART",
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "FRENCH",
+                "HISTORY",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3835056,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 215,
+        "config": {
+            "id": 215,
+            "name": "Fidel Streich",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "FRENCH",
+                "GERMAN",
+                "GREEK",
+                "HISTORY",
+                "LATIN",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3843212,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 682,
+        "config": {
+            "id": 682,
+            "name": "Rosa Moore",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ENGLISH",
+                "FRENCH",
+                "HISTORY",
+                "MATH_B",
+                "PE",
+                "PHYSICS",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3854912,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 374,
+        "config": {
+            "id": 374,
+            "name": "Simeon \r\nTurner",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GEOGRAPHY",
+                "HISTORY",
+                "LATIN",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3867816,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 34,
+        "config": {
+            "id": 34,
+            "name": "Jonatan Jacobi",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "ART",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GEOGRAPHY",
+                "GERMAN",
+                "HISTORY",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3875984,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 678,
+        "config": {
+            "id": 678,
+            "name": "Oliver Reichert",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "ART",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GEOGRAPHY",
+                "GERMAN",
+                "HISTORY",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3875984,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 223,
+        "config": {
+            "id": 223,
+            "name": "Rod Crist",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GEOGRAPHY",
+                "GERMAN",
+                "HISTORY",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3876000,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 394,
+        "config": {
+            "id": 394,
+            "name": "Izaiah Hyatt",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "GEOGRAPHY",
+                "GERMAN",
+                "HISTORY",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3876000,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 160,
+        "config": {
+            "id": 160,
+            "name": "Alycia Rice",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BIOLOGY",
+                "DUTCH",
+                "ENGLISH",
+                "GEOGRAPHY",
+                "GERMAN",
+                "HISTORY",
+                "MATH_A",
+                "PE",
+                "SCIENCE"
+            ]
+        },
+        "curriculumHash": 3891840,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 43,
+        "config": {
+            "id": 43,
+            "name": "Dovie Beatty",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "BUSINESS_ECON",
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "FRENCH",
+                "GEOGRAPHY",
+                "HISTORY",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3900576,
+        "groupId": "5_VWO"
+    },
+    {
+        "id": 133,
+        "config": {
+            "id": 133,
+            "name": "Hassan O'Keefe",
+            "education": "VWO",
+            "year": 5,
+            "subjects": [
+                "DUTCH",
+                "ECON",
+                "ENGLISH",
+                "FRENCH",
+                "GEOGRAPHY",
+                "GERMAN",
+                "HISTORY",
+                "MATH_A",
+                "PE"
+            ]
+        },
+        "curriculumHash": 3908736,
+        "groupId": "5_VWO"
+    }
+]
