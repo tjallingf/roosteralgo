@@ -12,29 +12,53 @@ export interface PeriodConfig extends EntityConfig {
  * Direct sibling: a period adjacent to another period, on the same day
  */
 export default class Period extends EntityWithAvailability<PeriodConfig, PeriodController> {
-    day() {
-        const periodsPerDay =  Config.get('PERIODS_PER_WEEK') / 5;
-        return Math.floor(this.config.id / periodsPerDay);
-    }
-    
-    offset(offset = 1) {
-        return this.controller.get(this.config.id + offset);
+    protected day: number;
+    protected distanceFromMedian: number;
+    protected distanceFitness: number;
+    protected relativeIndex: number;
+
+    constructor(config: PeriodConfig, controller: any) {
+        super(config, controller);
     }
 
-    offsetOrFail(offset = 1) {
-        return this.controller.getOrFail(this.config.id + offset);
+    __init() {
+        const periodsPerDay = $config.get('periodsPerWeek') / 5;
+        const medianPeriodIndex = Math.round(periodsPerDay / 3);
+
+        this.relativeIndex = this.id % periodsPerDay;
+
+        // Prefer periods before the median over periods after the median
+        this.distanceFromMedian = this.relativeIndex <= medianPeriodIndex ? (medianPeriodIndex - this.relativeIndex) : this.relativeIndex;
+
+        this.day = Math.floor(this.id / periodsPerDay);
+        this.distanceFitness = (periodsPerDay - this.relativeIndex) / periodsPerDay;
+    }
+    
+
+    getDay() { return this.day; }
+    getDistanceFromMedian() { return this.distanceFromMedian; }
+    getDistanceFitness() { return this.distanceFitness; }
+    getRelativeIndex() { return this.relativeIndex; }
+    
+    offset(offset = 1) {
+        return this.controller.getSafe(this.id + offset);
     }
 
     next(offset = 1) {
         return this.offset(offset);
     }
 
+    nextFittest() {
+        const nextId = this.controller.__idsSortedByFitness.indexOf(this.id)+1;
+        return this.controller.getSafe(nextId);
+    }
+
     previous(offset = 1) {
         return this.offset(-1 * offset);
     }
     
-    getFreeAdjacentSiblings(periodSpan: number) {
-        let freeAdjacentSiblings: Period[] = [];
+    getAdjacentSiblings(periodSpan: number) {
+        let adjacentSiblings: Period[] = [];
 
         for (let i = 0; i < periodSpan; i++) {
             // Find the consecutive period, offset by i.
@@ -44,48 +68,21 @@ export default class Period extends EntityWithAvailability<PeriodConfig, PeriodC
             // Break if there are no more siblings
             if(!adjacentSibling) break;
 
-            if(adjacentSibling.isFree()) {
-                freeAdjacentSiblings.push(adjacentSibling)
-            } else {
-                // If an occupied period was found, clear the array
-                freeAdjacentSiblings = [];
-            }
+            adjacentSiblings.push(adjacentSibling);
         }
 
-        return freeAdjacentSiblings;
+        return adjacentSiblings;
     }
 
     getAdjacentSibling(offset = 1) {
-        const sibling = this.controller.getOrFail(this.config.id + offset);
+        const sibling = this.controller.getOrFail(this.id + offset);
 
         // Sibling is null if it exceeds the number of periods per week.
         // Also check if the periods are on the same day.
-        if(!sibling || sibling.day() !== this.day()) {
+        if(!sibling || sibling.getDay() !== this.getDay()) {
             return null;
         }
 
         return sibling;
-    }
-
-    isFreeUntil(untilPeriod: Period) {
-        let result = true;
-        const indexDiff = Math.abs(untilPeriod.config.id - this.config.id);
-
-        for (let i = 0; i < indexDiff; i++) {
-            // Get the period that matches the current 'i'.
-            const period = i === 0 ? this : this.controller.getOrFail(i);
-            
-            // Period is null when the id is not in the valid range
-            if(!period || !period.isFree()) {
-                result = false;
-                break;
-            }
-        }
-
-        return result;
-    }
-
-    isFree() {
-        return this.getLinks(Subject).length === 0;
     }
 }

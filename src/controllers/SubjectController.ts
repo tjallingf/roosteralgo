@@ -1,19 +1,21 @@
-import ControllerClass from '../lib/ControllerClass';
+import ControllerClass from '../lib/ControllerFactory';
 import Input from '../lib/Input';
 import Student from '../models/entities/Student';
 import Subject from '../models/entities/Subject';
-import Batch from '../models/Batch';
+import Batch from '../models/entities/Batch';
 import Context from '../lib/Context';
 
 export default class SubjectController extends ControllerClass<Subject>() {
     load() {
-        $logger.info('Loading subjects...');
+        // $logger.info('Loading subjects...');
 
         const subjects = Input.get('subjects');
-        subjects.forEach(config => this._storeItem(new Subject(config, this)));
+        subjects.forEach(config => this.store(new Subject(config, this)));
 
-        this.week.students.all().forEach(student => {
+        $students.all().forEach(student => {
             student.config.subjects.forEach(subjectId => {
+                if(subjectId === 'LTC' && student.config.subjects.includes('GEL')) return;
+
                 // Get the subject
                 const subject = this.get(subjectId);
 
@@ -23,8 +25,7 @@ export default class SubjectController extends ControllerClass<Subject>() {
                 // Check if the number or periods is at least 1
                 if(context.match(subject.config.periods)! >= 1) {
                     student.linkTo(subject);
-                } else {
-                    $logger.notice(`Student ${student.id} takes a subject with 0 periods (${subject.id}).`);
+                    student.__curriculumFlag |= subject.bitmask;
                 }
             })
         })

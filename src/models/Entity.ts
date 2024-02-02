@@ -1,27 +1,32 @@
 import Context from '../lib/Context';
 import _ from 'lodash';
+import { v4 as uuidv4 } from 'uuid';
 
 export interface EntityConfig {
-    id?: string | number
+    id: string | number
 }
 
 export type EntityConstructor = new (...args: any[]) => Entity;
 
 export default abstract class Entity<TConfig extends EntityConfig = any, TController extends any = any> {       
-    id: string;
+    id: TConfig['id'];
     config: TConfig;
     linkedEntities: Record<string, Record<string | number, any>> = {};
-    protected readonly controller: TController;
+    uuid: string;
+    readonly controller: TController;
 
     constructor(config: TConfig, controller: TController) {
-        this.id = config.id+'';
+        this.id = config.id;
         this.config = config;
         this.controller = controller;
+        this.uuid = uuidv4();
+    }
 
-        this.init();
+    __afterStore() {
+        this.__init();
     }
     
-    init(): void {}
+    protected __init(): void {}
 
     linkTo(entity: Entity, initial = true) {
         if(!entity) return this;
@@ -51,7 +56,7 @@ export default abstract class Entity<TConfig extends EntityConfig = any, TContro
     }
 
     unlinkFrom(entity: Entity, initial = true) {
-        if(!entity) return;
+        if(!entity) return this;
         
         const type = entity.constructor.name;
         if(this.linkedEntities[type] && this.linkedEntities[type][entity.id]) {

@@ -1,102 +1,189 @@
-import Batch from './models/Batch';
-import Teacher from './models/entities/Teacher';
-import Context from './lib/Context';
-import Week from './Week';
-import PeriodController from './controllers/PeriodController';
-import Student from './models/entities/Student';
+import _ from 'lodash';
+import Meeting from './models/Meeting';
+import Period from './models/entities/Period';
+import PeriodIterator from './lib/PeriodIterator';
 
 export default class Schedule {
-    readonly batch: Batch;
-    readonly contexts: Record<string, Context> = {};
-    readonly week: Week;
-    readonly periods: PeriodController;
+    readonly id: string;
+    protected meetings: Record<string, Meeting> = {};
+    meetingsByPeriod: Record<number, Record<string, Meeting>> = {};
 
-    constructor(week: Week, batch: Batch) {
-        this.week = week;
-        this.batch = batch;
-        this.periods = new PeriodController(this.week);
+    constructor() {
+        this.id = _.uniqueId('schedule_');
 
-        this.seed();
-    }
-
-    protected seed() {
-        this.seedBatch(this.batch);
-    }
-
-    protected updateWhenFitter(context: Context) {
-        if(this.newContextIsFitter(context)) {
-            this.update(context);
-        }
-    }
-
-    protected update(context: Context) {
-        context.period.unlinkAll();
-        context.period.linkTo(context.batch).linkTo(context.subject).linkTo(context.classroom).linkTo(context.batch.getLink(Teacher));
-    } 
-
-    protected newContextIsFitter(newContext: Context) {
-        const currentContext = this.contexts[newContext.period.id];
-
-        // If no context was found (meaning the given period is free)
-        if(!currentContext) return true;
-
-        return newContext.teacher.getFitness(newContext) > newContext.teacher.getFitness(currentContext);
-    }
-
-    protected attemptUpdate(context: Context) {
-        if(!context.teacher.isAvailable(context.period)) {
-            return false;
-        }
-
-        if(!context.batch.getLinks(Student).every(s => s.isAvailable(context.period))) {
-            return false;
-        }
-
-        this.updateWhenFitter(context);
-    }
-
-    protected seedBatch(batch: Batch) {
-        const subject = batch.config.subject;
-        const teacher = batch.getLink(Teacher);
-        const classroom = this.week.classrooms.all()[0];
-        const baseContext = new Context(subject, batch, teacher, classroom);
-        const periodCount = subject.getProperty('periods', baseContext) ?? 0;
-        const periodSpan = subject.config.periodSpan ?? 1;
-
-        this.periods.allSortedByMedianDistance().every(period => {
-            // Break if the required number of periods has been reached
-            if(this.periods.all().filter(s => s.isLinkedTo(subject)).length >= periodCount) {
-                return false;
-            }
-
-            const context = baseContext.merge(period);
-
-            if(periodSpan === 1) {
-                if(period.isFree()) {
-                    this.attemptUpdate(context);
-                }
-            } else {
-                // If the subject spans more than one period
-                const freeSiblings = period.getFreeAdjacentSiblings(periodSpan);
-                if(freeSiblings.length >= periodSpan) {
-                    freeSiblings.forEach(siblingPeriod => {
-                        this.attemptUpdate(context.merge(siblingPeriod));
-                    })
-                }
-            }
-            
-            return true;
+        // Create new meetings for each batch
+        $batches.all().forEach(batch => {           
+            batch.createMeetings(this).forEach(meeting => {
+                this.storeMeeting(meeting);
+            })
         })
 
-        // Throw an error if the required number of periods was not able to be scheduled
-        if(this.periods.all().filter(s => s.isLinkedTo(subject)).length < periodCount) {
-            throw new Error(`Could not schedule ${periodCount} periods for batch ${batch.id}.`);
-        }
+        this.getMeetings().forEach(meeting => {
+            meeting.__init();
+        })
+
+        $periods.all().forEach(period => {
+            this.meetingsByPeriod[period.id] = {};
+        })
     }
 
-    mutate() {
-        // this.subjects.forEach(subject => {
-        //     subject
+    seed(selectBestPeriodChance: number = 1) {
+        const meetings: Meeting[] = [];
+        $batches.all().forEach(bat => {
+            meetings.push(...bat.getMeetings(this));
+        })
+            
+        // Sort meetings by subject seedingPriority and number of students
+        const sortedMeetings = _.orderBy(meetings, meeting => (
+            50 * meeting.getSubject().seedingPriority +
+            1  * meeting.getBatch().getStudents().length +
+            10  * Math.random()
+        ), 'desc');
+
+        this.repair([]);
+
+        // // Loop over every meeting
+        // sortedMeetings.forEach(meeting => {
+        //     const sortedPeriods = _.sortBy($periods.all(), p => meeting.getFitnessForPeriod(p));
+
+        //     let i = 0;
+        //     while(!meeting.getPeriod()) {
+        //         const period = sortedPeriods[i++];
+        //         const conflicts = this.getConflicts(meeting, period);
+        //         if(conflicts.length === 0) {
+        //             meeting.setPeriodWithCheck(period);
+        //         }
+        //     }
+
+        //     // const batch = meeting.getBatch();
+        //     // const periods = $periods.allSortedShuffled(5);
+        //     // const bestCompatiblePeriod = periods.find(period => {
+        //     //     let isCompatible: boolean = true;
+
+        //     //     if(!meeting.getTeacher().availability.includes(period.getDay())) {
+        //     //         return false;
+        //     //     }
+                
+        //     //     if(meeting.getSubject().needsBlockMeetings()) {
+        //     //         isCompatible = batch.getMeetings(this).every(m => this.isCompatible(m, period.next(m.getOrder())))
+        //     //     } else {
+        //     //         isCompatible = this.isCompatible(meeting, period);
+        //     //     }
+
+        //     //     return isCompatible;
+        //     // }) ?? $periods.random();
+
+        //     // const classroom = $classrooms.random();
+
+        //     // // Check whether the subject needs block meetings
+        //     // meeting.setPeriodWithCheck(bestCompatiblePeriod);
+        //     // meeting.setClassroom(classroom);
         // })
+    }
+
+    repair(immovableMeetings: Meeting[]) {
+        let conflicts = new Set<Meeting>();
+        this.getMeetings().forEach(meeting => {
+            if(immovableMeetings.includes(meeting)) return false;
+
+            if(!meeting.getPeriod()) {
+                conflicts.add(meeting);
+                return;
+            }
+
+            const conflicts2 = this.getConflicts(meeting, meeting.getPeriod());
+            console.log({ meeting: meeting.id, conflicts2: conflicts2.map(m => m.id) });
+            if(conflicts2.length > 0) {
+                conflicts.add(meeting);
+            }
+        });
+
+        console.log('Found', conflicts.size, 'conflicts');
+
+        const iterators: Record<string, PeriodIterator> = {};
+        
+        let j = 0;
+        while(conflicts.size > 0) {
+            let a: Meeting[] = [];
+            for(const b of conflicts.values()) {
+                a.push(b);
+            }
+            console.log(a.length);
+            [...conflicts].forEach((mtg, i) => {
+                if(immovableMeetings.includes(mtg)) {
+                    conflicts.delete(mtg);
+                    return;
+                }
+
+                if(!mtg.getPeriod() || this.getConflicts(mtg, mtg.getPeriod()).length > 0) {
+                    // Create a period iterator for this meeting if not created
+                    if(!iterators[mtg.id]) {
+                        const sortedPeriods = mtg.getPeriodsSortedByFitness();
+                        iterators[mtg.id] = new PeriodIterator(sortedPeriods);
+                    }
+
+                    // Get the period iterator for this meeting
+                    const periodIterator = iterators[mtg.id];
+
+                    // Get the next best period for this meeting and update the meeting
+                    const period = periodIterator.next();
+                    j++;
+                    mtg.setPeriod(period);
+                }
+                
+                // Remove the meeting from the list of conflicting meetings
+                conflicts.delete(mtg);
+
+                // Find new conflicts that arise and add them to the list of conflicts
+                const newConflicts = this.getConflicts(mtg, mtg.getPeriod());
+                // console.log('Found', newConflicts.length, 'new conflicts', newConflicts.map(m => m.id), mtg.id);
+                newConflicts.forEach(conflict => {
+                    conflicts.add(conflict);
+                })
+            })
+        }
+
+        console.log('Moved meetings', j, 'times');
+
+        console.log(this.getMeetings().length, this.getMeetings().filter(m => !m.getPeriod()).length);
+    }
+
+    getMeetingsOnPeriod(period: Period) {
+        return Object.values(this.meetingsByPeriod[period.id]);
+    }
+
+    getConflicts(meeting: Meeting, period: Period) {
+        const meetings = this.getMeetingsOnPeriod(period);
+        return meetings.filter(mtg => !mtg.isCompatibleWith(meeting));
+    }
+
+    storeMeeting(meeting: Meeting) {
+        this.meetings[meeting.id] = meeting;
+        return this;
+    }
+
+    getMeetings() {
+        return Object.values(this.meetings);
+    }
+
+    getMeeting(id: string) {
+        return this.meetings[id];
+    }
+
+    getFitness() {
+        let totalFitness = 0;
+
+        const meetings = this.getMeetings();
+        meetings.forEach(meeting => {
+            if(!meeting.getPeriod()) return;
+            const fitness = meeting.getFitnessForPeriod(meeting.getPeriod());
+            totalFitness += fitness.getFloat();
+
+            if(fitness.getFloat() < 1) {
+                // console.log(meeting.id, fitness.getScores())
+            }
+        })
+
+        return totalFitness / meetings.length;
     }
 }

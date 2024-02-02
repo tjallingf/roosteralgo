@@ -5,8 +5,8 @@ import type Teacher from '../models/entities/Teacher';
 import type Subject from '../models/entities/Subject';
 import { forIn } from 'lodash';
 import Entity from '../models/Entity';
-import Grade from '../models/entities/Grade';
-import Batch from '../models/Batch';
+import Grade from '../models/Grade';
+import Batch from '../models/entities/Batch';
 
 export type ContextCondition = Record<string, string | number | (string | number)[]>;
 export type ContextItem<TValue> = [ContextCondition, TValue];
@@ -24,11 +24,11 @@ export interface ContextData {
 
 export interface SerializedContextData {
     classroom: string,
-    period: string,
+    period: number,
     subject: string,
-    teacher: string,
+    teacher: number,
     level: string,
-    year: number,
+    year: number
 }
 
 export default class Context {
@@ -44,12 +44,12 @@ export default class Context {
 
     constructor(...entities: Entity[]) {
         this.update(...entities);
-
+        
         if(!this.data.grade && this.data.student) {
             this.data.grade = this.student.getLink(Grade);
         }
 
-        if(!this.data.subject && this.data.student && this.data.subject) {
+        if(!this.data.batch && this.data.student && this.data.subject) {
             this.data.batch = this.student.getBatch(this.data.subject);
         }
     }

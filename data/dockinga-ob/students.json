@@ -1,0 +1,249 @@
+[
+  {
+    "id": 1,
+    "name": "Joy Nico Kessler",
+    "level": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "GYM",
+      "SOC",
+      "MUS",
+      "ART"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Zion Labadie",
+    "level": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "GYM",
+      "PHY",
+      "CHE",
+      "SOC",
+      "ART"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Gideon Bartoletti",
+    "level": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "GYM",
+      "PHY",
+      "CHE",
+      "SOC",
+      "MUS"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Molly Kennedy Rohan",
+    "level": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "GYM",
+      "PHY",
+      "SOC",
+      "ART"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Freida Schimmel",
+    "level": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "GYM",
+      "PHY",
+      "SOC",
+      "MUS"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Syble Logan River Weber",
+    "level": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "GYM",
+      "SOC",
+      "MUS"
+    ]
+  },
+    {
+    "id": 7,
+    "name": "Joy Nico Kessler",
+    "level": "VWO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "GYM",
+      "SOC",
+      "ART"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Zion Labadie",
+    "level": "VWO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PHY",
+      "CHE",
+      "SOC",
+      "MUS",
+      "ART"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Gideon Bartoletti",
+    "level": "HAVO",
+    "year": 3,
+    "subjects": [
+      "DUL",
+      "ECO",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "PHY",
+      "CHE",
+      "SOC",
+      "MUS"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Molly Kennedy Rohan",
+    "level": "HAVO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "GYM",
+      "PHY",
+      "SOC",
+      "MUS",
+      "ART"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Freida Schimmel",
+    "level": "VWO",
+    "year": 2,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "GEL",
+      "HIS",
+      "MAT",
+      "GYM",
+      "PHY",
+      "SOC",
+      "MUS",
+      "ART"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Syble Logan River Weber",
+    "level": "HAVO",
+    "year": 1,
+    "subjects": [
+      "BIO",
+      "DUL",
+      "ENG",
+      "ENL",
+      "FRL",
+      "GEO",
+      "HIS",
+      "MAT",
+      "GYM",
+      "SOC",
+      "MUS",
+      "ART"
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </script>
-    <h1 id="date">Open console and call load() function.</h1>
+    <h1 id="title">Open console and call load() function.</h1>
     <div style="display:flex;width:100%;">
         <div class="grid" id="prefix">
             <div>0</div>
@@ -11,15 +11,13 @@
             <div>5</div>
             <div>6</div>
             <div>7</div>
+            <div>8</div>
         </div>
         <div class="grid" id="schedule">
             
         </div>
     </div>
     <div id="metadata">
-        <div class="metadata-item">
-            <b>Median period</b>: <span id="median">N/A</span>
-        </div>
         <div class="metadata-item">
             <b>Period distribution</b>: <span id="period-distrib">N/A</span>
         </div>
@@ -30,7 +28,7 @@
         margin: 0;
     }
 
-    #date {
+    #title {
         font-size: 1.25rem;
         margin-bottom: 0;
         padding: 1rem 1rem;
@@ -38,12 +36,20 @@
 
     #prefix {
         font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prefix div {
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     #schedule {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(9, 1fr);
         grid-auto-flow: column;
         width: 100%;
     }
@@ -56,46 +62,120 @@
         padding: 0.25rem 0;
     }
 
-    .period[data-subject="ART"] { background: #A13300; }
-    .period[data-subject="BIO"] { background: #A0006C; }
-    .period[data-subject="BUE"] { background: #D06401; }
-    .period[data-subject="DUL"] { background: #EA7041; }
-    .period[data-subject="ECO"] { background: #6D3303; }
-    .period[data-subject="ENG"] { background: #BF7700; }
-    .period[data-subject="ENL"] { background: #662D40; }
-    .period[data-subject="FRL"] { background: #B99700; }
-    .period[data-subject="GEO"] { background: #D3B227; }
-    .period[data-subject="GEL"] { background: #29516f; }
-    .period[data-subject="GRK"] { background: #AA8652; }
-    .period[data-subject="HIS"] { background: #C8843B; }
-    .period[data-subject="LAT"] { background: #3D654B; }
-    .period[data-subject="MAT"] { background: #4C745A; }
-    .period[data-subject="MAA"] { background: #809B78; }
-    .period[data-subject="MAB"] { background: #232C31; }
-    .period[data-subject="MAD"] { background: #385D77; }
-    .period[data-subject="MUS"] { background: #4C85B0; }
-    .period[data-subject="GYM"] { background: #523A50; }
-    .period[data-subject="PHY"] { background: #7A4C7B; }
-    .period[data-subject="CHE"] { background: #9978B1; }
-    .period[data-subject="SOC"] { background: #EA449A; }
+    .meeting[data-subject="ART"] { background: #A13300; }
+    .meeting[data-subject="BIO"] { background: #A0006C; }
+    .meeting[data-subject="BUE"] { background: #D06401; }
+    .meeting[data-subject="DUL"] { background: #EA7041; }
+    .meeting[data-subject="ECO"] { background: #6D3303; }
+    .meeting[data-subject="ENG"] { background: #BF7700; }
+    .meeting[data-subject="ENL"] { background: #662D40; }
+    .meeting[data-subject="FRL"] { background: #B99700; }
+    .meeting[data-subject="GEO"] { background: #D3B227; }
+    .meeting[data-subject="GEL"] { background: #29516f; }
+    .meeting[data-subject="GRK"] { background: #AA8652; }
+    .meeting[data-subject="HIS"] { background: #C8843B; }
+    .meeting[data-subject="LAT"] { background: #3D654B; }
+    .meeting[data-subject="MAT"] { background: #4C745A; }
+    .meeting[data-subject="MAA"] { background: #809B78; }
+    .meeting[data-subject="MAB"] { background: #41545e; }
+    .meeting[data-subject="MAD"] { background: #385D77; }
+    .meeting[data-subject="MUS"] { background: #4C85B0; }
+    .meeting[data-subject="GYM"] { background: #523A50; }
+    .meeting[data-subject="PHY"] { background: #7A4C7B; }
+    .meeting[data-subject="CHE"] { background: #9978B1; }
+    .meeting[data-subject="SOC"] { background: #EA449A; }
 
-    .grid div {
+    .meeting {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .meeting a {
+        color: inherit !important;
+        text-decoration: none;
+    }
+
+    .period {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+    }
+
+    .period .period-index {
+        color: #666;
+    }
+
+    .period .period-index:not(:only-child) {
+        display: none;
+    }
+
+    .grid div:not(.period) {
         padding: 0.75rem 1rem;
     }
 </style>
 <script>
-    for (let i = 0; i < 40; i++) {
-        $('#schedule').append(`<div class="period" id="period-${i}"></div>`)   
+    for (let i = 0; i < SCHEDULE.meta.entities.period.length; i++) {
+        $('#schedule').append(`<div class="period" id="period-${i}"><span class="period-index">${i}</span></div>`)   
     }
 
-    $('#date').text(new Date(DATE_TIME).toString().split('GMT+')[0])
+    const dateStr = new Date(DATE_TIME).toString().split('GMT+')[0];
+    $('#title').text(`${SCHEDULE.entity.type.charAt(0).toUpperCase()}${SCHEDULE.entity.type.slice(1)} ${SCHEDULE.entity.id} | ${dateStr}`)
+    $('#period-distrib').text(SCHEDULE.meta.entities.period.join(', '));
 
-    SCHEDULE.periods.forEach(({ period, subject, teacher, classroom }) => {
+    SCHEDULE.meetings.forEach(({ period, subject, teacher, teacherCode, classroom, batch }) => {
+        const batchShort = batch.charAt(0)+batch.charAt(2)+batch.charAt(batch.length-1);
+
         const $period = $(`#period-${period}`);
-        $period.html(`${subject} - ${teacher} - ${classroom}`);
-        $period.attr('data-subject', subject);
+        $period.append(`
+            <div class="meeting" data-subject="${subject}">
+                <a href="../batch/${batch}.html">${batchShort}_${subject}</a>
+                <a href="../teacher/${teacher}.html">${teacherCode}</a> 
+            </div>
+        `);
     })
 
-    $('#median').text(SCHEDULE.meta.periods.medianPeriodDayIndex);
-    $('#period-distrib').text(SCHEDULE.meta.periodDistrib.join(', '));
+    $(document).on('keydown', async e => {
+        if(e.currentTarget !== document) return;
+
+        const key = (e.key ?? e.code).toLowerCase();
+
+        switch(key) {
+            case 'q':
+                return window.history.back();
+            case 'e':
+                return window.history.forward();
+            case 'a': 
+                const prevUrl = await getEntityScheduleUrl(SCHEDULE.entity.type, -1);
+                return prevUrl && (window.location.href = prevUrl);
+            case 'd':
+                const nextUrl = await getEntityScheduleUrl(SCHEDULE.entity.type, 1);
+                return nextUrl && (window.location.href = nextUrl);
+        }
+    })
+    
+    async function getEntityScheduleUrl(type, offsetIndex = 0, attemptIndex = 0) {
+        const baseIndex = parseInt(getEntityIndex(type, SCHEDULE.entity.id));
+        const newIndex = baseIndex + offsetIndex;
+        const newId = SCHEDULE.meta.entities[type][newIndex];
+        if(!newId) return;
+
+        const newUrl = `../${type}/${newId}.html`;
+        return newUrl;
+    }
+
+    function getEntityIndex(type, id) {
+        return getKeyByValue(SCHEDULE.meta.entities[type], id);
+    }
+
+    function getKeyByValue(object, value) {
+        return Object.keys(object).find(key => object[key] === value);
+    }
 </script>

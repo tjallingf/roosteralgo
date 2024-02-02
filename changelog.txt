@@ -7,6 +7,6 @@
     - PeriodController.allSortedByMedianDistance() toegevoegd
     - Seeding priority voor subjects toegevoegd
     - Onjuiste formule voor period.getDay():
-        this.config.id % (Config.get('NUMBER_OF_PERIODS_PER_WEEK') / 5);
+        this.config.id % (Config.get('NUMBER_OF_periodsPerWeek') / 5);
     - Opgelost:
         

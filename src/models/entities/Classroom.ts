@@ -19,25 +19,25 @@ export interface ClassroomConfig {
 }
 
 export default class Classroom extends EntityWithAvailability<ClassroomConfig, ClassroomController> {
-    init() {
+    __init() {
         if(this.config.fitness?.length) {
             this.config.fitness.forEach(([ condition, value ]) => {
                 if(Array.isArray(condition.subjects)) {
                     // If the subject selector is an array, link the classroom to the selected subjects
                     condition.subjects.forEach(subjectId => {
-                        const subject = this.controller.week.students.get(subjectId);
+                        const subject = $students.get(subjectId);
                         subject.linkTo(this);
                     })
                 } else if(condition.subjects === '*') {
                     // If the subject selector is a wildcard (*), link the classroom to all available subjects
-                    this.controller.week.students.all().forEach(subject => {
+                    $students.all().forEach(subject => {
                         subject.linkTo(this);
                     })
                 }
             })
         }
 
-        $logger.debug(`Linked classroom ${this.config.id} to ${this.getLinks(Subject).length} subjects. (${this.getLinks(Subject).map(s => s.id).join(', ')}).`)
+        // $logger.debug(`Linked classroom ${this.config.id} to ${this.getLinks(Subject).length} subjects. (${this.getLinks(Subject).map(s => s.id).join(', ')}).`)
     }
 
     getFitness(context: Context) {

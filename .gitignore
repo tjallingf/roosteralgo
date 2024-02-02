@@ -3,3 +3,4 @@ tools/
 dist/
 renders/
 changelog.txt
+legacy/

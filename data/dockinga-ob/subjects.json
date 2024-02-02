@@ -1,0 +1,252 @@
+[
+  {
+    "id": "ART",
+    "name": "Beeldende vorming",
+    "teachers": [
+      35,
+      36
+    ],
+    "periods": 2,
+    "tags": ["BLOCK_MEETINGS"]
+  },
+  {
+    "id": "BIO",
+    "name": "Biologie",
+    "teachers": [
+      39,
+      40
+    ],
+    "periods": [
+      [{"year": [1,2]}, 2],
+      [{"year":[4,5,6]}, 3]
+    ]
+  },
+  {
+    "id": "DUL",
+    "name": "Nederlands",
+    "teachers": [
+      8,
+      9
+    ],
+    "periods": [
+      [{"year": "*"}, 3]
+    ],
+    "tags": ["CORE_SUBJECT"]
+  },
+  {
+    "id": "BUE",
+    "name": "Bedrijfseconomie",
+    "teachers": [
+      31
+    ],
+    "periods": [
+      [{"year": [4,5,6]}, 3]
+    ]
+  },
+  {
+    "id": "ECO",
+    "name": "Economie",
+    "teachers": [
+      31
+    ],
+    "periods": [
+      [{"year": 3}, 2],
+      [{"year": [4,5,6]}, 3]
+    ]
+  },
+  {
+    "id": "ENG",
+    "name": "Techniek",
+    "teachers": [
+      59
+    ],
+    "periods": [
+      [{"year": [1,2]}, 1]
+    ],
+    "tags": ["BLOCK_MEETINGS"]
+  },
+  {
+    "id": "ENL",
+    "name": "Engelse taal",
+    "teachers": [
+      0,
+      2
+    ],
+    "periods": [
+      [{"year": "*"}, 3]
+    ],
+    "tags": ["CORE_SUBJECT"]
+  },
+  {
+    "id": "FRL",
+    "name": "Franse taal",
+    "teachers": [
+      20,
+      21
+    ],
+    "periods": [
+      [{"year": "*"}, 3]
+    ]
+  },
+  {
+    "id": "GEO",
+    "name": "Aardrijkskunde",
+    "teachers": [
+      24,
+      25
+    ],
+    "periods": [
+      [{"year": 1}, 2],
+      [{"year": [2,3,4,5,6]}, 3]
+    ]
+  },
+  {
+    "id": "GEL",
+    "name": "Duitse taal",
+    "teachers": [
+      49
+    ],
+    "periods": [
+      [{"year": 2}, 2],
+      [{"year": [3,4,5,6]}, 3]
+    ]
+  },
+  {
+    "id": "GRK",
+    "name": "Griekse taal",
+    "teachers": [
+      29
+    ],
+    "periods": [
+      [{"year":[1,2,3,4]}, 3],
+      [{"year":[5,6]}, 4]
+    ]
+  },
+  {
+    "id": "HIS",
+    "name": "Geschiedenis",
+    "teachers": [
+      42,
+      43
+    ],
+    "periods": [
+      [{"year": [1,2,3]}, 2],
+      [{"year": [4,5,6]}, 3]
+    ]
+  },
+  {
+    "id": "LAT",
+    "name": "Latijnse taal",
+    "teachers": [
+      28
+    ],
+    "periods": [
+      [{"year":[1,2,3,4]}, 3],
+      [{"year":[5,6]}, 4]
+    ]
+  },
+  {
+    "id": "MAT",
+    "name": "Wiskunde",
+    "teachers": [
+      13,
+      14
+    ],
+    "periods": [
+      [{"year": [1,2,3]}, 3]
+    ],
+    "tags": ["CORE_SUBJECT"]
+  },
+  {
+    "id": "MAA",
+    "name": "Wiskunde A",
+    "teachers": [
+      15,
+      16
+    ],
+    "periods": [
+      [{"year": [4,5,6]}, 3]
+    ],
+    "tags": ["CORE_SUBJECT"]
+  },
+  {
+    "id": "MAB",
+    "name": "Wiskunde B",
+    "teachers": [
+      15,
+      16
+    ],
+    "periods": [
+      [{"year": 4}, 3],
+      [{"year": [5,6]}, 4]
+    ],
+    "tags": ["CORE_SUBJECT"]
+  },
+  {
+    "id": "MAD",
+    "name": "Wiskunde D",
+    "teachers": [
+      16
+    ],
+    "periods": [
+      [{"year": [4,5]}, 3],
+      [{"year": 6}, 4]
+    ],
+    "tags": ["CORE_SUBJECT"]
+  },
+  {
+    "id": "MUS",
+    "name": "Muziek",
+    "teachers": [
+      51
+    ],
+    "periods": [
+      [{"year":"*"}, 2]
+    ],
+    "tags": ["BLOCK_MEETINGS"]
+  },
+  {
+    "id": "GYM",
+    "name": "Lichamelijke opvoeding",
+    "teachers": [
+      54,
+      55,
+      56
+    ],
+    "periods": 2,
+    "tags": ["BLOCK_MEETINGS","CORE_SUBJECT"]
+  },
+  {
+    "id": "PHY",
+    "name": "Natuurkunde",
+    "teachers": [
+      17,
+      18
+    ],
+    "periods": [
+      [{"year":[1,2,3]}, 2],
+      [{"year":[4,5,6]}, 3]
+    ]
+  },
+  {
+    "id": "CHE",
+    "name": "Scheikunde",
+    "teachers": [
+      58
+    ],
+    "periods": [
+      [{"year":3}, 2],
+      [{"year":[4,5,6]}, 2]
+    ]
+  },
+  {
+    "id": "SOC",
+    "name": "Godsdienstfilosofie",
+    "teachers": [
+      60
+    ],
+    "periods": [
+      [{"year":"*"}, 0]
+    ]
+  }
+]

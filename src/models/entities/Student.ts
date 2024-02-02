@@ -1,8 +1,9 @@
 import EntityWithAvailability from '../EntityWithAvailability';
-import Batch, { BatchConfig } from '../Batch';
+import Batch, { BatchConfig } from './Batch';
 import Subject from './Subject';
-import { GradeConfig } from './Grade';
+import Grade, { GradeConfig } from '../Grade';
 import type StudentController from '../../controllers/StudentController';
+import _ from 'lodash';
 
 export interface StudentConfig {
     id: number;
@@ -14,11 +15,25 @@ export interface StudentConfig {
 }
 
 export default class Student extends EntityWithAvailability<StudentConfig, StudentController> {
-    getGradeId() {
-        return `${this.config.year}_${this.config.level}`;
+    __curriculumFlag: number;
+
+    getGrade() {
+        return this.getLink(Grade);
+    }
+
+    getCurriculumFlag() {
+        return this.__curriculumFlag;
     }
 
     getBatch(subject: Subject) {
         return this.getLinks(Batch).find(b => b.config.subject.id === subject.id)!;
+    }
+
+    getSubjects() {
+        return this.getLinks(Subject);
+    }
+
+    takesSubject(subject: Subject) {
+        return this.isLinkedTo(subject);
     }
 }
