@@ -24,22 +24,34 @@ export default class MasterAlgo extends GeneticAlgo<Schedule> {
     }
 
     mutate(schedule: Schedule, size: number) {
-        console.log({ size });
         const meetings = schedule.getMeetings();
-        const count = Math.round(size * 4);
-        const meetingsToSwap = _.shuffle(meetings).slice(0, count);
+        const count = Math.ceil(size * meetings.length / 4);
+        // console.log('Swapping', count, 'meetings', { size })
+        // const meetingsToSwap = _.shuffle(meetings).slice(0, count);
+        const sorted = _.orderBy(meetings, m => m.getFitness(), 'asc')
+        const before = this.fitness(schedule);
 
-        meetingsToSwap.forEach((meetingA, i) => {
-            const meetingB = meetings[i];
-
-            const periodA = meetingA.getPeriod();
-            const periodB = meetingB.getPeriod();
-
-            meetingA.setPeriod(periodB);
-            meetingB.setPeriod(periodA);
+        meetings.forEach(mtg => {
+            if(Math.random() > size) return;
+            const pickPeriod = _.sample(mtg.getPeriodsSortedByFitness().slice(0, 5))!;
+            mtg.setPeriod(pickPeriod)
         })
 
-        return this.repair(schedule, meetingsToSwap);
+        // meetingsToSwap.forEach((meetingA, i) => {
+        //     const meetingB = meetings[i];
+
+        //     const periodA = meetingA.getPeriod();
+        //     const periodB = meetingB.getPeriod();
+
+        //     meetingA.setPeriod(periodB);
+        //     meetingB.setPeriod(periodA);
+        // })
+        // console.log('swapped:',meetingsToSwap.map(m => [m.id,m.getPeriod()?.id]));
+
+        const a = this.repair(schedule, []);
+        const after = this.fitness(schedule);
+        console.log(before.toFixed(3), '->', after.toFixed(3), '=', (after-before).toFixed(3))
+        return a;
     }
 
     repair(schedule: Schedule, immovableMeetings: Meeting[]) {

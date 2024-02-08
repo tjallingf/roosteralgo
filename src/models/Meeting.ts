@@ -25,6 +25,8 @@ export default class Meeting {
         this.id = `${this.batch.id}_m${order}`;
 
         this.getPeriodsSortedByFitness = _.memoize(this.getPeriodsSortedByFitness);
+        this.isCompatibleWith = _.memoize(this.isCompatibleWith);
+        this.skipConflictWith = _.memoize(this.skipConflictWith);
     }
 
     __init() {
@@ -32,6 +34,10 @@ export default class Meeting {
 
         const thisIdx = meetings.indexOf(this);
         this.meetingsToCheck = meetings.filter((_, thatIdx) => thisIdx > thatIdx);
+    }
+    
+    skipConflictWith(meeting: Meeting) {
+        return !this.meetingsToCheck.includes(meeting);
     }
 
     // getConflicts() {
@@ -49,20 +55,40 @@ export default class Meeting {
     //     return conflicts;
     // }
 
+    getFitness() {
+        if(!this.getPeriod()) return 0;
+        return this.getFitnessForPeriod(this.getPeriod());
+    }
+
     getPeriodsSortedByFitness() {
-        return _.sortBy($periods.all(), p => this.getFitnessForPeriod(p).getFloat());
+        const allPeriods = $periods.all();
+        const availablePeriods = allPeriods.filter(p => this.getTeacher().getFitnessForPeriod(p) > 0);
+        return _.orderBy(availablePeriods, p => this.getFitnessForPeriod(p).getFloat(), 'desc');
     }
 
     getFitnessForPeriod(period: Period) {
         const fitness = new FitnessManager();
-        const studentCount = this.getBatch().getStudents().length;
-        let periodsOnDay = 0;
+        // const studentCount = this.getBatch().getStudents().length;
+        // let periodsOnDay = 0;
 
         // fitness.addHardConstraint('TEACHER_AVAILABLE', 1);
         // fitness.addHardConstraint('STUDENTS_AVAILABLE', 1);
-        fitness.addHardConstraint('TEACHER_DAY_AVAIL', this.getTeacher().availability.includes(period.getDay()) ? 1 : 0);
-        fitness.addSoftConstraint('STUDENTS_OCCUPIED_BEFORE', 1);
+        fitness.addHardConstraint('TEACHER_PERIOD_FITNESS', this.getTeacher().getFitnessForPeriod(period));
         fitness.addSoftConstraint('PERIOD_FITNESS', period.getDistanceFitness());
+
+        // const previousPeriod = period.previous();
+        // if(previousPeriod.getDay() === period.getDay()) {
+        //     let totalStudentsOccupied = 0;
+
+        //     const meetings = this.schedule.getMeetingsOnPeriod(previousPeriod);
+        //     meetings.forEach(mtg => {
+        //         const studentsInCommon = mtg.getBatch().getStudentsInCommon(this.getBatch())
+        //         totalStudentsOccupied += studentsInCommon.length;
+        //     })
+        //     fitness.addSoftConstraint('STUDENTS_OCCUPIED_BEFORE', totalStudentsOccupied / this.getBatch().getStudents().length);
+        // } else {
+        //     fitness.addSoftConstraint('STUDENTS_OCCUPIED_BEFORE', 1);
+        // }
 
         // let studentsOccupiedBeforeCount = 0;
 

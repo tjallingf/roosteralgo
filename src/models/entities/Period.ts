@@ -8,6 +8,10 @@ export interface PeriodConfig extends EntityConfig {
     id: number
 }
 
+const DAY_ABBREVIATIONS = [
+    'mon', 'tue', 'wed', 'thu', 'fri'
+];
+
 /**
  * Direct sibling: a period adjacent to another period, on the same day
  */
@@ -31,7 +35,7 @@ export default class Period extends EntityWithAvailability<PeriodConfig, PeriodC
         this.distanceFromMedian = this.relativeIndex <= medianPeriodIndex ? (medianPeriodIndex - this.relativeIndex) : this.relativeIndex;
 
         this.day = Math.floor(this.id / periodsPerDay);
-        this.distanceFitness = (periodsPerDay - this.relativeIndex) / periodsPerDay;
+        this.distanceFitness = (periodsPerDay - this.distanceFromMedian) / periodsPerDay;
     }
     
 
@@ -49,7 +53,7 @@ export default class Period extends EntityWithAvailability<PeriodConfig, PeriodC
     }
 
     nextFittest() {
-        const nextId = this.controller.__idsSortedByFitness.indexOf(this.id)+1;
+        const nextId = this.controller.allSorted().indexOf(this)+1;
         return this.controller.getSafe(nextId);
     }
 

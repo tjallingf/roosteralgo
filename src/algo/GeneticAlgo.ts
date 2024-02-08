@@ -46,7 +46,7 @@ export default abstract class GeneticAlgo<TEntity> {
     evolve(iteration: number) {   
         const sortedPopulation = this.sortPopulation(this.population);
         const size = (this.config.iterations - iteration) / this.config.iterations;
-        console.log(`Iteration ${iteration} with fittest`, this.fitness(sortedPopulation[0]));
+        console.log(`Iteration ${iteration} with fittest`, sortedPopulation.slice(0, 10).map(e => this.fitness(e)));
         let newPopulation = sortedPopulation;
 
         // Mutate

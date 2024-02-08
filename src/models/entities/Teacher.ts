@@ -5,12 +5,14 @@ import type TeacherController from '../../controllers/TeacherController';
 import Entity from '../Entity';
 import Period from './Period';
 import _ from 'lodash';
+import Batch from './Batch';
 
 export interface TeacherConfig {
     id: number;
     code: string;
     name: string;
     batches: ContextList<number>;
+    requests: ContextList<number>;
 }
 
 export default class Teacher extends EntityWithAvailability<TeacherConfig, TeacherController> {
@@ -19,12 +21,19 @@ export default class Teacher extends EntityWithAvailability<TeacherConfig, Teach
     constructor(config: TeacherConfig, controller: TeacherController) {
         super(config, controller);
 
-        this.availability = _.shuffle(_.range(0, 5)).slice(0, _.random(3,5));
-        console.log(this.config.code, this.availability);
+        this.getFitnessForPeriod = _.memoize(this.getFitnessForPeriod);
     }
-    
-    getFitness(context: Context) {
+
+    getFitnessForBatch(batch: Batch) {
         return Math.random();
     }
 
+    getFitnessForPeriod(period: Period) {
+        const context = new Context({
+            day: period.getDay()
+        })
+
+        const fitness = this.getProperty('requests', context) ?? 1;
+        return fitness;
+    }
 }

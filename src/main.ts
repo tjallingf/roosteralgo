@@ -51,10 +51,10 @@ globalThis.log = false;
 
     const algo = new MasterAlgo({
         crossoverChance: 0,
-        mutateChance: 0.7,
-        size: 1,
+        mutateChance: 1,
+        size: 10,
         eliteSize: 1,
-        iterations: 1,
+        iterations: 50,
         tournamentSize: 3
     });
 

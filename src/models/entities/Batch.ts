@@ -31,12 +31,13 @@ export default class Batch extends Entity<BatchConfig, BatchController> {
 
         this.linkTo(this.config.subject).linkTo(this.config.grade);
 
-        // Calculate numbero f meetings
-        const context = new Context(this, this.getLink(Teacher), this.getLink(Subject));
+        // Calculate number of meetings
+        const context = Context.fromEntities(this);
         this.meetingCount = this.getSubject().getProperty('periods', context) ?? 0;
 
         // Memoize expensive functions
         this.getStudentsInCommon = _.memoize(this.getStudentsInCommon);
+        this.isCompatibleWith = _.memoize(this.isCompatibleWith);
     }
 
     __init() {

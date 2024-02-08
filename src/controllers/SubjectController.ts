@@ -20,7 +20,7 @@ export default class SubjectController extends ControllerClass<Subject>() {
                 const subject = this.get(subjectId);
 
                 // Create context
-                const context = new Context(student);
+                const context = Context.fromEntities(student);
 
                 // Check if the number or periods is at least 1
                 if(context.match(subject.config.periods)! >= 1) {

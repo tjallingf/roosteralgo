@@ -82,70 +82,55 @@ export default class Schedule {
     }
 
     repair(immovableMeetings: Meeting[]) {
-        let conflicts = new Set<Meeting>();
-        this.getMeetings().forEach(meeting => {
-            if(immovableMeetings.includes(meeting)) return false;
+        // let conflicts = new Set<Meeting>();
+        // this.getMeetings().forEach(meeting => {   
+        //     conflicts.add(meeting);    
+        //     // if(!meeting.getPeriod()) {
+        //     //     conflicts.add(meeting);
+        //     //     return;
+        //     // }
 
-            if(!meeting.getPeriod()) {
-                conflicts.add(meeting);
-                return;
-            }
+        //     // const conflicts2 = this.getConflicts(meeting, meeting.getPeriod());
+        //     // if(conflicts2.length > 0) {
+        //     //     conflicts.add(meeting);
+        //     // }
+        // });
 
-            const conflicts2 = this.getConflicts(meeting, meeting.getPeriod());
-            console.log({ meeting: meeting.id, conflicts2: conflicts2.map(m => m.id) });
-            if(conflicts2.length > 0) {
-                conflicts.add(meeting);
-            }
-        });
-
-        console.log('Found', conflicts.size, 'conflicts');
+        // console.log('Found', conflicts.size, 'conflicts');
+        //console.log('conflicts:', new Array(...conflicts).map(m => [m.id, m.getPeriod()?.id]));
 
         const iterators: Record<string, PeriodIterator> = {};
-        
+
         let j = 0;
-        while(conflicts.size > 0) {
-            let a: Meeting[] = [];
-            for(const b of conflicts.values()) {
-                a.push(b);
-            }
-            console.log(a.length);
-            [...conflicts].forEach((mtg, i) => {
-                if(immovableMeetings.includes(mtg)) {
-                    conflicts.delete(mtg);
-                    return;
+        let conflicts = this.getAllConflicts();
+        while(conflicts.length > 0) {
+            conflicts.forEach((mtg, i) => {
+                // Create a period iterator for this meeting if not created
+                if(!iterators[mtg.id]) {
+                    const sortedPeriods = mtg.getPeriodsSortedByFitness();
+                    iterators[mtg.id] = new PeriodIterator(sortedPeriods);
                 }
 
-                if(!mtg.getPeriod() || this.getConflicts(mtg, mtg.getPeriod()).length > 0) {
-                    // Create a period iterator for this meeting if not created
-                    if(!iterators[mtg.id]) {
-                        const sortedPeriods = mtg.getPeriodsSortedByFitness();
-                        iterators[mtg.id] = new PeriodIterator(sortedPeriods);
-                    }
+                // Get the period iterator for this meeting
+                const periodIterator = iterators[mtg.id];
 
-                    // Get the period iterator for this meeting
-                    const periodIterator = iterators[mtg.id];
-
-                    // Get the next best period for this meeting and update the meeting
-                    const period = periodIterator.next();
-                    j++;
-                    mtg.setPeriod(period);
-                }
-                
-                // Remove the meeting from the list of conflicting meetings
-                conflicts.delete(mtg);
-
-                // Find new conflicts that arise and add them to the list of conflicts
-                const newConflicts = this.getConflicts(mtg, mtg.getPeriod());
-                // console.log('Found', newConflicts.length, 'new conflicts', newConflicts.map(m => m.id), mtg.id);
-                newConflicts.forEach(conflict => {
-                    conflicts.add(conflict);
-                })
+                // Get the next best period for this meeting and update the meeting
+                const period = periodIterator.next();
+                j++;
+                mtg.setPeriod(period);
             })
+
+            conflicts = this.getAllConflicts();
         }
 
         console.log('Moved meetings', j, 'times');
+    }
 
-        console.log(this.getMeetings().length, this.getMeetings().filter(m => !m.getPeriod()).length);
+    getAllConflicts() {
+        return this.getMeetings().filter(mtg => {
+            if(!mtg.getPeriod()) return true;
+            return this.getConflicts(mtg, mtg.getPeriod()).length > 0;
+        });
     }
 
     getMeetingsOnPeriod(period: Period) {
@@ -154,7 +139,10 @@ export default class Schedule {
 
     getConflicts(meeting: Meeting, period: Period) {
         const meetings = this.getMeetingsOnPeriod(period);
-        return meetings.filter(mtg => !mtg.isCompatibleWith(meeting));
+        return meetings.filter(mtg => {
+            if(mtg.skipConflictWith(meeting)) return false;
+            return mtg.isCompatibleWith(meeting);
+        });
     }
 
     storeMeeting(meeting: Meeting) {

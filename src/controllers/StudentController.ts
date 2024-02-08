@@ -8,7 +8,7 @@ export default class StudentController extends ControllerClass<Student>() {
         this.allUnique = _.memoize(this.allUnique);
 
         let students = Input.get('students');
-        students = students.filter(stu => stu.year <= 3);
+        students = students.filter((stu, i) => stu.year <= 3);
         students.forEach((config: any) => this.store(new Student(config, this)));
     }
 

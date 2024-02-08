@@ -10,7 +10,7 @@ export default class TeacherBatchLinkAlgo extends MaximumCardinalityAlgo<Batch, 
         const teacherFewestProposals = _.sortBy(teachers, tea => this.getProposals().filter(p => p[1] === tea).length);
 
         return (
-            1 * teacher.getFitness(new Context(batch)) +
+            1 * teacher.getFitnessForBatch(batch) +
             20  * (teacherFewestProposals[0] === teacher ? 1 : 0)
         );
     }
